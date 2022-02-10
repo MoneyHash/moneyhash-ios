@@ -1,6 +1,5 @@
-public struct MoneyHashiOS {
-    public private(set) var text = "Hello, World!"
+import MoneyHash
 
-    public init() {
-    }
+public struct MoneyHashiOS {
+    
 }

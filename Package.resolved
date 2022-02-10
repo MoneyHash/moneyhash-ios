@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MoneyHashShared",
+        "repositoryURL": "https://github.com/MoneyHash/MoneyHashShared",
+        "state": {
+          "branch": null,
+          "revision": "1723e19f5e334f2bebe657ce13a49b403a21c236",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
