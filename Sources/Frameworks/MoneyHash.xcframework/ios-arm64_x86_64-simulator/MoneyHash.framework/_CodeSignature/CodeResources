@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/MoneyHashShared.framework/MoneyHashShared</key>
 		<data>
-		knvijr6HG0X6NLZMXdTcFkx0AXQ=
+		2ywP5bE5oYOg4AActxPWfrYxGxc=
 		</data>
 		<key>Frameworks/MoneyHashShared.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		f9bq5/OCrb/LChw8Hq3YbDssO6Q=
+		VCj/2aE6wNSXDsblhJPUdVt6uxE=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		f9bq5/OCrb/LChw8Hq3YbDssO6Q=
+		VCj/2aE6wNSXDsblhJPUdVt6uxE=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		t6ZwHU5YH8p+MAVqpLr2K68cwCw=
+		fVVbchMBMdDoE3DYpGBq0qzokgI=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		t6ZwHU5YH8p+MAVqpLr2K68cwCw=
+		fVVbchMBMdDoE3DYpGBq0qzokgI=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AnA5fgwDTy7mfnGPIEXz8PYoObU=
+		ZMxXOGLPlzPshuluOeHRGeDkq24=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		AnA5fgwDTy7mfnGPIEXz8PYoObU=
+		ZMxXOGLPlzPshuluOeHRGeDkq24=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Bca4r0WBkmDjs3PLgntlsYSbZNM=
+		4v747HY9/xuHq4P6znn/QaTI4QA=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Bca4r0WBkmDjs3PLgntlsYSbZNM=
+		4v747HY9/xuHq4P6znn/QaTI4QA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XH5akAdsF0JcLdO6V1Nlvemc2o3Cbno5Sfuh2bGpQ5o=
+			gLnDDQsmVc/Rn9Hys2CSHmT5GwhBHyGO+E+M8viYKCU=
 			</data>
 		</dict>
 		<key>Frameworks/MoneyHashShared.framework/_CodeSignature/CodeResources</key>
@@ -138,28 +138,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVVFT7+oBJlHXSbB7h9ahmSR+xKNwjGvK30D91MFGII=
+			65Vykiimu0Sz+MJ6w5CntzpfmYKXJp5IRYSZ9r7fUj0=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yVVFT7+oBJlHXSbB7h9ahmSR+xKNwjGvK30D91MFGII=
+			65Vykiimu0Sz+MJ6w5CntzpfmYKXJp5IRYSZ9r7fUj0=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			27jM6qPJ9/KMqH9vFcwVh1bhKKqpTfSlFJb6XyGMYL0=
+			sddwEKaO1nPzShgH3qvSu+GizJBeKXHfhgylg2DrFEc=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			27jM6qPJ9/KMqH9vFcwVh1bhKKqpTfSlFJb6XyGMYL0=
+			sddwEKaO1nPzShgH3qvSu+GizJBeKXHfhgylg2DrFEc=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IFa6e8+iwT3/9IBdF8vpsuYPDtcqhPHjhWFNKyFWUMg=
+			MAPB52yH3lCsF3G/KhqiO+RCifeso+TcgK033hIHxO8=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64.swiftdoc</key>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IFa6e8+iwT3/9IBdF8vpsuYPDtcqhPHjhWFNKyFWUMg=
+			MAPB52yH3lCsF3G/KhqiO+RCifeso+TcgK033hIHxO8=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -222,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lHiUSVOQilEA8H592vNEcTnIhkhLYxrceN36reIL390=
+			CzB5N0SjrmRAT0S1WsYjcsujS4F64BYtJ3M93c9oT9o=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64.swiftdoc</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lHiUSVOQilEA8H592vNEcTnIhkhLYxrceN36reIL390=
+			CzB5N0SjrmRAT0S1WsYjcsujS4F64BYtJ3M93c9oT9o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
