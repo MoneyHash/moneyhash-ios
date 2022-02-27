@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(
             name: "MoneyHashShared",
-            url: "https://github.com/MoneyHash/MoneyHashShared",
+            url: "https://github.com/MoneyHash/moneyhash-spm",
             from: "0.0.1"
         )
     ],
