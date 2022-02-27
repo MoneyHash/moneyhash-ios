@@ -8,12 +8,22 @@ import Swift
 import UIKit
 import WebKit
 import _Concurrency
+public enum MHEnvironment {
+  case staging
+  case production
+  public static func == (a: MoneyHash.MHEnvironment, b: MoneyHash.MHEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum MHPaymentStatus {
   case error(errors: [Swift.String])
   case failed
   case requireExtraAction(actions: [Swift.String])
   case success
   case unknown
+  case cancelled
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MHPaymentViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
@@ -28,5 +38,7 @@ extension MoneyHash.MHPaymentViewController : WebKit.WKNavigationDelegate, WebKi
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
 public enum MHPaymentHandler {
-  public static func start(on viewController: UIKit.UIViewController, withPaymentId paymentId: Swift.String, completionHandler: @escaping (MoneyHash.MHPaymentStatus) -> Swift.Void)
+  public static func start(on viewController: UIKit.UIViewController, withPaymentId paymentId: Swift.String, withEnvironment environment: MoneyHash.MHEnvironment, completionHandler: @escaping (MoneyHash.MHPaymentStatus) -> Swift.Void)
 }
+extension MoneyHash.MHEnvironment : Swift.Equatable {}
+extension MoneyHash.MHEnvironment : Swift.Hashable {}

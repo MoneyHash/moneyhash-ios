@@ -5,7 +5,7 @@
 	<key>CFBundleExecutable</key>
 	<string>MoneyHashShared</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.moneyHash.moneyhashinternal.MoneyHashShared</string>
+	<string>com.moneyhash.shared.MoneyHashShared</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
