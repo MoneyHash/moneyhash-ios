@@ -19,11 +19,51 @@ public enum MHEnvironment {
 }
 public enum MHPaymentStatus {
   case error(errors: [Swift.String])
-  case failed
-  case requireExtraAction(actions: [Swift.String])
-  case success
+  case failed(result: MoneyHash.PaymentResult)
+  case requireExtraAction(actions: [Swift.String], result: MoneyHash.PaymentResult)
+  case success(result: MoneyHash.PaymentResult)
   case unknown
   case cancelled
+}
+public struct PaymentIntent {
+  public let id: Swift.String?
+  public let amount: Swift.Double?
+  public let amountValue: Swift.String?
+  public let currency: Swift.String?
+  public let isLive: Swift.Bool?
+  public let selectedMethod: Swift.String?
+}
+public struct PaymentTransaction {
+  public let id: Swift.String?
+  public let date: Swift.String?
+  public let status: Swift.String?
+  public let paymentMethod: MoneyHash.PaymentMethod?
+  public let billingData: MoneyHash.TransactionBillingData?
+  public let customFields: Swift.String?
+  public let customFormAnswers: Swift.String?
+}
+public struct PaymentMethod {
+  public let checkoutIcons: [Swift.String]?
+  public let paymentMethodName: Swift.String?
+  public let paymentMethod: Swift.String?
+}
+public struct TransactionBillingData {
+  public let firstName: Swift.String?
+  public let lastName: Swift.String?
+  public let email: Swift.String?
+  public let phoneNumber: Swift.String?
+  public let apartment: Swift.String?
+  public let floor: Swift.String?
+  public let building: Swift.String?
+  public let street: Swift.String?
+  public let city: Swift.String?
+  public let state: Swift.String?
+  public let country: Swift.String?
+  public let postalCode: Swift.String?
+}
+public struct PaymentResult {
+  public let intent: MoneyHash.PaymentIntent?
+  public let transaction: MoneyHash.PaymentTransaction?
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MHPaymentViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
