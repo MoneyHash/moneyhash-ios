@@ -25,15 +25,16 @@ public enum MHPaymentStatus {
   case unknown
   case cancelled
 }
-public struct PaymentIntent {
+public struct PaymentIntent : Swift.Encodable {
   public let id: Swift.String?
   public let amount: Swift.Double?
   public let amountValue: Swift.String?
   public let currency: Swift.String?
   public let isLive: Swift.Bool?
   public let selectedMethod: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
 }
-public struct PaymentTransaction {
+public struct PaymentTransaction : Swift.Encodable {
   public let id: Swift.String?
   public let date: Swift.String?
   public let status: Swift.String?
@@ -41,13 +42,15 @@ public struct PaymentTransaction {
   public let billingData: MoneyHash.TransactionBillingData?
   public let customFields: Swift.String?
   public let customFormAnswers: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
 }
-public struct PaymentMethod {
+public struct PaymentMethod : Swift.Encodable {
   public let checkoutIcons: [Swift.String]?
   public let paymentMethodName: Swift.String?
   public let paymentMethod: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
 }
-public struct TransactionBillingData {
+public struct TransactionBillingData : Swift.Encodable {
   public let firstName: Swift.String?
   public let lastName: Swift.String?
   public let email: Swift.String?
@@ -60,10 +63,16 @@ public struct TransactionBillingData {
   public let state: Swift.String?
   public let country: Swift.String?
   public let postalCode: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
 }
-public struct PaymentResult {
+public struct PaymentResult : Swift.Encodable {
   public let intent: MoneyHash.PaymentIntent?
   public let transaction: MoneyHash.PaymentTransaction?
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension Swift.Encodable {
+  public func convertToJSONString() throws -> Swift.String
+  public func convertToDictionary() throws -> [Swift.String : Any]
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MHPaymentViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
