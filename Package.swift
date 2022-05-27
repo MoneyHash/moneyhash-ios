@@ -25,8 +25,7 @@ let package = Package(
         .target(
             name: "MoneyHashiOS",
             dependencies: [
-                .target(name: "MoneyHash"),
-                .product(name: "MoneyHashShared", package: "MoneyHashShared")
+                .target(name: "MoneyHash")
             ]
         ),
         .binaryTarget(
