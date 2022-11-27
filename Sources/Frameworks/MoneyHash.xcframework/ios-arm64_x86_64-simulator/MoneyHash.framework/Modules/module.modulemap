@@ -6,6 +6,6 @@ framework module MoneyHash {
 }
 
 module MoneyHash.Swift {
-    header "MoneyHash-Swift.h"
-    requires objc
+  header "MoneyHash-Swift.h"
+  requires objc
 }
