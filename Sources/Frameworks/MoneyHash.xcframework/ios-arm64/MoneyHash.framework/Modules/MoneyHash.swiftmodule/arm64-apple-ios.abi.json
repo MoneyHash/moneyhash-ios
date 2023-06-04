@@ -7969,14 +7969,14 @@
     {
       "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
       "kind": "StringLiteral",
-      "offset": 268,
+      "offset": 271,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"1.0.2\""
     },
     {
       "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 389,
+      "offset": 392,
       "length": 5,
       "value": "false"
     },
