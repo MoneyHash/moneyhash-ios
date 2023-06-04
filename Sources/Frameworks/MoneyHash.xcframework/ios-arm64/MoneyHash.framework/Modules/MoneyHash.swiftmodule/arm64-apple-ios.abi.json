@@ -710,6 +710,41 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cvv:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IntentMethodMetaData",
+                "printedName": "MoneyHash.IntentMethodMetaData",
+                "usr": "s:9MoneyHash20IntentMethodMetaDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash20IntentMethodMetaDataV3cvvACSSSg_tcfc",
+            "mangledName": "$s9MoneyHash20IntentMethodMetaDataV3cvvACSSSg_tcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",

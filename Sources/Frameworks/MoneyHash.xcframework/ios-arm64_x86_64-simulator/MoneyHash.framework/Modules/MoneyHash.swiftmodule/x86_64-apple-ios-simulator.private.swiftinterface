@@ -29,6 +29,7 @@ public struct MethodsResult : Swift.Encodable {
 }
 public struct IntentMethodMetaData {
   public let cvv: Swift.String?
+  public init(cvv: Swift.String?)
 }
 public enum MoneyHashSDKBuilder {
   public static func build() -> any MoneyHash.MoneyHashSDK
