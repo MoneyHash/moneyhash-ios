@@ -399,7 +399,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -524,7 +524,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -599,7 +599,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -620,6 +620,340 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedButtonViewStyle",
+        "printedName": "EmbedButtonViewStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(color:fontFamily:fontWeight:fontSize:fontSmoothing:lineHeight:textTransform:letterSpacing:background:padding:borderRadius:boxShadow:borderStyle:borderColor:borderWidth:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedButtonViewStyle",
+                "printedName": "MoneyHash.EmbedButtonViewStyle",
+                "usr": "s:9MoneyHash20EmbedButtonViewStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash20EmbedButtonViewStyleV5color10fontFamily0H6Weight0H4Size0H9Smoothing10lineHeight13textTransform13letterSpacing10background7padding12borderRadius9boxShadow0uF00U5Color0U5WidthACSSSg_A14Stcfc",
+            "mangledName": "$s9MoneyHash20EmbedButtonViewStyleV5color10fontFamily0H6Weight0H4Size0H9Smoothing10lineHeight13textTransform13letterSpacing10background7padding12borderRadius9boxShadow0uF00U5Color0U5WidthACSSSg_A14Stcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedButtonViewStyle",
+                "printedName": "MoneyHash.EmbedButtonViewStyle",
+                "usr": "s:9MoneyHash20EmbedButtonViewStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash20EmbedButtonViewStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash20EmbedButtonViewStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash20EmbedButtonViewStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash20EmbedButtonViewStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash20EmbedButtonViewStyleV",
+        "mangledName": "$s9MoneyHash20EmbedButtonViewStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -778,7 +1112,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MoneyHashSDK",
-                "printedName": "MoneyHash.MoneyHashSDK",
+                "printedName": "any MoneyHash.MoneyHashSDK",
                 "usr": "s:9MoneyHash0aB3SDKP"
               }
             ],
@@ -1614,7 +1948,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1679,7 +2013,7 @@
           {
             "kind": "Function",
             "name": "renderForm",
-            "printedName": "renderForm(on:intentId:intentType:completionHandler:)",
+            "printedName": "renderForm(on:intentId:embedStyle:intentType:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1700,6 +2034,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedStyle",
+                    "printedName": "MoneyHash.EmbedStyle",
+                    "usr": "s:9MoneyHash10EmbedStyleV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "IntentType",
                 "printedName": "MoneyHash.IntentType",
                 "usr": "s:9MoneyHash10IntentTypeO"
@@ -1707,7 +2055,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<MoneyHash.IntentDetails, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1717,7 +2065,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<MoneyHash.IntentDetails, Swift.Error>",
+                    "printedName": "Swift.Result<MoneyHash.IntentDetails, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1728,7 +2076,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1738,8 +2086,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP10renderForm2on8intentId0G4Type17completionHandlerySo16UIViewControllerC_SSAA06IntentI0Oys6ResultOyAA0N7DetailsVs5Error_pGctF",
-            "mangledName": "$s9MoneyHash0aB3SDKP10renderForm2on8intentId0G4Type17completionHandlerySo16UIViewControllerC_SSAA06IntentI0Oys6ResultOyAA0N7DetailsVs5Error_pGctF",
+            "usr": "s:9MoneyHash0aB3SDKP10renderForm2on8intentId10embedStyle0G4Type17completionHandlerySo16UIViewControllerC_SSAA05EmbedJ0VSgAA06IntentK0Oys6ResultOyAA0Q7DetailsVs5Error_pGctF",
+            "mangledName": "$s9MoneyHash0aB3SDKP10renderForm2on8intentId10embedStyle0G4Type17completionHandlerySo16UIViewControllerC_SSAA05EmbedJ0VSgAA06IntentK0Oys6ResultOyAA0Q7DetailsVs5Error_pGctF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -1772,7 +2120,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<MoneyHash.IntentMethods, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<MoneyHash.IntentMethods, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1782,7 +2130,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<MoneyHash.IntentMethods, Swift.Error>",
+                    "printedName": "Swift.Result<MoneyHash.IntentMethods, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1793,7 +2141,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1837,7 +2185,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<MoneyHash.IntentDetails, Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1847,7 +2195,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<MoneyHash.IntentDetails, Swift.Error>",
+                    "printedName": "Swift.Result<MoneyHash.IntentDetails, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1858,7 +2206,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1902,7 +2250,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1912,7 +2260,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<(), Swift.Error>",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1922,7 +2270,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1966,7 +2314,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1976,7 +2324,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), Swift.Error>",
+                    "printedName": "Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2000,7 +2348,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -2070,7 +2418,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2080,7 +2428,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), Swift.Error>",
+                    "printedName": "Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2104,7 +2452,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -2130,6 +2478,145 @@
         "moduleName": "MoneyHash",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedLoaderStyle",
+        "printedName": "EmbedLoaderStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(backgroundColor:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedLoaderStyle",
+                "printedName": "MoneyHash.EmbedLoaderStyle",
+                "usr": "s:9MoneyHash16EmbedLoaderStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash16EmbedLoaderStyleV15backgroundColor5colorACSSSg_AFtcfc",
+            "mangledName": "$s9MoneyHash16EmbedLoaderStyleV15backgroundColor5colorACSSSg_AFtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedLoaderStyle",
+                "printedName": "MoneyHash.EmbedLoaderStyle",
+                "usr": "s:9MoneyHash16EmbedLoaderStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash16EmbedLoaderStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash16EmbedLoaderStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16EmbedLoaderStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash16EmbedLoaderStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash16EmbedLoaderStyleV",
+        "mangledName": "$s9MoneyHash16EmbedLoaderStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -2510,6 +2997,325 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedInputViewStyle",
+        "printedName": "EmbedInputViewStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(height:padding:background:borderRadius:boxShadow:borderStyle:borderColor:borderWidth:color:fontFamily:fontWeight:fontSize:fontSmoothing:lineHeight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedInputViewStyle",
+                "printedName": "MoneyHash.EmbedInputViewStyle",
+                "usr": "s:9MoneyHash19EmbedInputViewStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash19EmbedInputViewStyleV6height7padding10background12borderRadius9boxShadow0jF00J5Color0J5Width5color10fontFamily0Q6Weight0Q4Size0Q9Smoothing10lineHeightACSSSg_A13Rtcfc",
+            "mangledName": "$s9MoneyHash19EmbedInputViewStyleV6height7padding10background12borderRadius9boxShadow0jF00J5Color0J5Width5color10fontFamily0Q6Weight0Q4Size0Q9Smoothing10lineHeightACSSSg_A13Rtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedInputViewStyle",
+                "printedName": "MoneyHash.EmbedInputViewStyle",
+                "usr": "s:9MoneyHash19EmbedInputViewStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash19EmbedInputViewStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash19EmbedInputViewStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash19EmbedInputViewStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash19EmbedInputViewStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash19EmbedInputViewStyleV",
+        "mangledName": "$s9MoneyHash19EmbedInputViewStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
@@ -3205,7 +4011,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3670,7 +4476,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4085,7 +4891,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4466,7 +5272,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4512,6 +5318,160 @@
         "printedName": "MoneyHashShared",
         "declKind": "Import",
         "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedButtonStyle",
+        "printedName": "EmbedButtonStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(base:hover:focus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedButtonStyle",
+                "printedName": "MoneyHash.EmbedButtonStyle",
+                "usr": "s:9MoneyHash16EmbedButtonStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedButtonViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedButtonViewStyle",
+                    "printedName": "MoneyHash.EmbedButtonViewStyle",
+                    "usr": "s:9MoneyHash20EmbedButtonViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedButtonViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedButtonViewStyle",
+                    "printedName": "MoneyHash.EmbedButtonViewStyle",
+                    "usr": "s:9MoneyHash20EmbedButtonViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedButtonViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedButtonViewStyle",
+                    "printedName": "MoneyHash.EmbedButtonViewStyle",
+                    "usr": "s:9MoneyHash20EmbedButtonViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash16EmbedButtonStyleV4base5hover5focusAcA0cd4ViewE0VSg_A2Itcfc",
+            "mangledName": "$s9MoneyHash16EmbedButtonStyleV4base5hover5focusAcA0cd4ViewE0VSg_A2Itcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedButtonStyle",
+                "printedName": "MoneyHash.EmbedButtonStyle",
+                "usr": "s:9MoneyHash16EmbedButtonStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash16EmbedButtonStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash16EmbedButtonStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16EmbedButtonStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash16EmbedButtonStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash16EmbedButtonStyleV",
+        "mangledName": "$s9MoneyHash16EmbedButtonStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -5148,7 +6108,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5256,7 +6216,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5277,6 +6237,160 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedStyle",
+        "printedName": "EmbedStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(submitButton:loader:input:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedStyle",
+                "printedName": "MoneyHash.EmbedStyle",
+                "usr": "s:9MoneyHash10EmbedStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedButtonStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedButtonStyle",
+                    "printedName": "MoneyHash.EmbedButtonStyle",
+                    "usr": "s:9MoneyHash16EmbedButtonStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedLoaderStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedLoaderStyle",
+                    "printedName": "MoneyHash.EmbedLoaderStyle",
+                    "usr": "s:9MoneyHash16EmbedLoaderStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedInputStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedInputStyle",
+                    "printedName": "MoneyHash.EmbedInputStyle",
+                    "usr": "s:9MoneyHash15EmbedInputStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash10EmbedStyleV12submitButton6loader5inputAcA0cfD0VSg_AA0c6LoaderD0VSgAA0c5InputD0VSgtcfc",
+            "mangledName": "$s9MoneyHash10EmbedStyleV12submitButton6loader5inputAcA0cfD0VSg_AA0c6LoaderD0VSgAA0c5InputD0VSgtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedStyle",
+                "printedName": "MoneyHash.EmbedStyle",
+                "usr": "s:9MoneyHash10EmbedStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash10EmbedStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash10EmbedStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash10EmbedStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash10EmbedStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash10EmbedStyleV",
+        "mangledName": "$s9MoneyHash10EmbedStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -5505,7 +6619,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -5556,7 +6670,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -5818,6 +6932,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -6173,7 +7294,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6194,6 +7315,160 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmbedInputStyle",
+        "printedName": "EmbedInputStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(base:error:focus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedInputStyle",
+                "printedName": "MoneyHash.EmbedInputStyle",
+                "usr": "s:9MoneyHash15EmbedInputStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedInputViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedInputViewStyle",
+                    "printedName": "MoneyHash.EmbedInputViewStyle",
+                    "usr": "s:9MoneyHash19EmbedInputViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedInputViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedInputViewStyle",
+                    "printedName": "MoneyHash.EmbedInputViewStyle",
+                    "usr": "s:9MoneyHash19EmbedInputViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.EmbedInputViewStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EmbedInputViewStyle",
+                    "printedName": "MoneyHash.EmbedInputViewStyle",
+                    "usr": "s:9MoneyHash19EmbedInputViewStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash15EmbedInputStyleV4base5error5focusAcA0cd4ViewE0VSg_A2Itcfc",
+            "mangledName": "$s9MoneyHash15EmbedInputStyleV4base5error5focusAcA0cd4ViewE0VSg_A2Itcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EmbedInputStyle",
+                "printedName": "MoneyHash.EmbedInputStyle",
+                "usr": "s:9MoneyHash15EmbedInputStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash15EmbedInputStyleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash15EmbedInputStyleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15EmbedInputStyleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash15EmbedInputStyleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash15EmbedInputStyleV",
+        "mangledName": "$s9MoneyHash15EmbedInputStyleV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -6991,7 +8266,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7316,6 +8591,20 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "MoneyHash",
         "declAttributes": [
           "RawDocComment"
@@ -7614,7 +8903,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7974,648 +9263,123 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
       "kind": "FloatLiteral",
       "offset": 317,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 486,
-      "length": 13,
-      "value": "\"strokeStart\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 502,
-      "length": 11,
-      "value": "\"strokeEnd\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 782,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
-      "kind": "StringLiteral",
-      "offset": 271,
-      "length": 7,
-      "value": "\"1.0.4\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/DI \/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 392,
+      "offset": 288,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 221,
-      "length": 3,
-      "value": "251"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 225,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 251,
-      "length": 3,
-      "value": "209"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 255,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 280,
-      "length": 3,
-      "value": "162"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 284,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/UIColorExtension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 310,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Cards\/MHCardViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1541,
-      "length": 167,
-      "value": "\"Sorry, we encountered an error while processing your card. Please try again later or you may want to check your dashboard for more details on the status of your card\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payout\/MHPayoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 994,
-      "length": 171,
-      "value": "\"Sorry, we encountered an error while processing your payout. Please try again later or you may want to check your dashboard for more details on the status of your payout\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeColorAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 384,
-      "length": 13,
-      "value": "\"strokeColor\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/StrokeColorAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 637,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/EncodableExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 276,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/EncodableExtensions.swift",
-      "kind": "Array",
-      "offset": 467,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Extensions\/EncodableExtensions.swift",
-      "kind": "Dictionary",
-      "offset": 493,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
-      "kind": "Array",
-      "offset": 561,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
-      "kind": "Array",
-      "offset": 706,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
-      "kind": "Array",
-      "offset": 859,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
-      "kind": "Array",
-      "offset": 1006,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/IntentMethods.swift",
-      "kind": "Array",
-      "offset": 1159,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1000,
-      "length": 173,
-      "value": "\"Sorry, we encountered an error while processing your payment. Please try again later or you may want to check your dashboard for more details on the status of your payment\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1891,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1972,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2048,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2122,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2565,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2623,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2719,
-      "length": 173,
-      "value": "\"Sorry, we encountered an error while processing your payment. Please try again later or you may want to check your dashboard for more details on the status of your payment\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3029,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3075,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Payment\/MHPaymentViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3762,
-      "length": 173,
-      "value": "\"Sorry, we encountered an error while processing your payment. Please try again later or you may want to check your dashboard for more details on the status of your payment\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
-      "kind": "StringLiteral",
-      "offset": 525,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
       "kind": "StringLiteral",
       "offset": 169,
       "length": 18,
       "value": "\"MoneyHash.ProgressShapeLayer\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressShapeLayer.swift",
       "kind": "StringLiteral",
       "offset": 169,
       "length": 18,
       "value": "\"MoneyHash.ProgressShapeLayer\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
-      "kind": "BooleanLiteral",
-      "offset": 810,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Methods\/SavedCard.swift",
-      "kind": "IntegerLiteral",
-      "offset": 866,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 424,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1002,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1079,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1254,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "StringLiteral",
       "offset": 1281,
       "length": 31,
       "value": "\"Swapping time and environment\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1608,
-      "length": 36,
-      "value": "\"Type must be overriden in subclass\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2206,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3268,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3614,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3684,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3888,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3987,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4088,
-      "length": 3,
-      "value": "-16"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4835,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5130,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5184,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5451,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5505,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5651,
-      "length": 40,
-      "value": "\"Function must be overriden in subclass\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5756,
-      "length": 40,
-      "value": "\"Function must be overriden in subclass\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 16,
       "value": "\"MoneyHash.MHViewController\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2767,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3007,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3226,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1939,
-      "length": 9,
-      "value": "\"Payment\""
+      "offset": 97,
+      "length": 7,
+      "value": "\"1.0.6\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2865,
-      "length": 23,
-      "value": "\"Error capturing Data.\""
+      "offset": 136,
+      "length": 7,
+      "value": "\"style\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
-      "length": 11,
-      "value": "\"Simulated\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Services \/ApplePayService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3261,
+      "offset": 173,
       "length": 5,
-      "value": "false"
+      "value": "\"sdk\""
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/RotationAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 542,
-      "length": 42,
-      "value": "\"transform.rotation.\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/RotationAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/RotationAnimation.swift",
-      "kind": "StringLiteral",
-      "offset": 817,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 672,
-      "length": 31,
-      "value": "\"init(coder:) is not supported\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 846,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 936,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 958,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1284,
-      "length": 4,
-      "value": "0.25"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1313,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1339,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1366,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1481,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1507,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1534,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1652,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2288,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2325,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2350,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2753,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/moneyhash-ios-internal\/MoneyHash\/ProgressView\/ProgressView.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 12,
       "value": "\"MoneyHash.ProgressView\""
-    },
-    {
-      "filePath": "\/Users\/ahmedelzeiny\/Documents\/Work\/MoneyHash\/UpdateMobileRepos\/moneyhash-ios-internal\/MoneyHash\/Models\/AmountData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 602,
-      "length": 1,
-      "value": "0"
     }
   ]
 }

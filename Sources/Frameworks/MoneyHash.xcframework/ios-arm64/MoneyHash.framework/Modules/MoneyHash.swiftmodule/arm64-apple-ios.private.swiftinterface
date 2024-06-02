@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoneyHash
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MoneyHash
 import Foundation
 @_exported import MoneyHash
 import MoneyHashShared
@@ -11,6 +10,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct Intent : Swift.Encodable {
   public let id: Swift.String?
   public let amount: MoneyHash.AmountData?
@@ -26,6 +26,11 @@ public struct RedirectData : Swift.Encodable {
 }
 public struct MethodsResult : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct EmbedButtonViewStyle : Swift.Codable {
+  public init(color: Swift.String? = nil, fontFamily: Swift.String? = nil, fontWeight: Swift.String? = nil, fontSize: Swift.String? = nil, fontSmoothing: Swift.String? = nil, lineHeight: Swift.String? = nil, textTransform: Swift.String? = nil, letterSpacing: Swift.String? = nil, background: Swift.String? = nil, padding: Swift.String? = nil, borderRadius: Swift.String? = nil, boxShadow: Swift.String? = nil, borderStyle: Swift.String? = nil, borderColor: Swift.String? = nil, borderWidth: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct IntentMethodMetaData {
   public let cvv: Swift.String?
@@ -58,12 +63,17 @@ public struct IntentDetails : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol MoneyHashSDK {
-  func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
+  func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   func getIntentMethods(intentId: Swift.String, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentMethods, any Swift.Error>) -> Swift.Void)
   func getIntentDetails(intentId: Swift.String, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   func deleteSavedCard(cardTokenId: Swift.String, intentSecret: Swift.String, completionHandler: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   func resetSelectedMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>) -> Swift.Void)
   func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?, completionHandler: @escaping (Swift.Result<(MoneyHash.IntentDetails, MoneyHash.IntentMethods), any Swift.Error>) -> Swift.Void)
+}
+public struct EmbedLoaderStyle : Swift.Codable {
+  public init(backgroundColor: Swift.String? = nil, color: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum MHError : Swift.Error {
   case cancelled
@@ -77,6 +87,11 @@ public enum IntentType : Swift.String, Swift.Encodable {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct EmbedInputViewStyle : Swift.Codable {
+  public init(height: Swift.String? = nil, padding: Swift.String? = nil, background: Swift.String? = nil, borderRadius: Swift.String? = nil, boxShadow: Swift.String? = nil, borderStyle: Swift.String? = nil, borderColor: Swift.String? = nil, borderWidth: Swift.String? = nil, color: Swift.String? = nil, fontFamily: Swift.String? = nil, fontWeight: Swift.String? = nil, fontSize: Swift.String? = nil, fontSmoothing: Swift.String? = nil, lineHeight: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum IntentMethodType : Swift.String, Swift.Encodable {
   case paymentMethod
@@ -126,6 +141,11 @@ public struct PaymentMethod : Swift.Encodable {
   public let type: MoneyHash.IntentMethodType?
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct EmbedButtonStyle : Swift.Codable {
+  public init(base: MoneyHash.EmbedButtonViewStyle? = nil, hover: MoneyHash.EmbedButtonViewStyle? = nil, focus: MoneyHash.EmbedButtonViewStyle? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct SavedCard : Swift.Encodable {
   public let id: Swift.String?
   public let brand: Swift.String?
@@ -142,6 +162,11 @@ public struct SavedCard : Swift.Encodable {
 public struct CvvConfig : Swift.Encodable {
   public let digitsCount: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct EmbedStyle : Swift.Codable {
+  public init(submitButton: MoneyHash.EmbedButtonStyle? = nil, loader: MoneyHash.EmbedLoaderStyle? = nil, input: MoneyHash.EmbedInputStyle? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol MHStatus {
   static var cancelled: Self { get }
@@ -163,6 +188,11 @@ public struct CustomerBalance : Swift.Encodable {
   public let icon: Swift.String?
   public let type: MoneyHash.IntentMethodType?
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct EmbedInputStyle : Swift.Codable {
+  public init(base: MoneyHash.EmbedInputViewStyle? = nil, error: MoneyHash.EmbedInputViewStyle? = nil, focus: MoneyHash.EmbedInputViewStyle? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Transaction : Swift.Encodable {
   public let id: Swift.String?
