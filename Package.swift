@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MoneyHashiOS",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -18,7 +18,7 @@ let package = Package(
         .package(
             name: "MoneyHashShared",
             url: "https://github.com/MoneyHash/moneyhash-spm",
-            from: "1.0.2"
+            from: "2.0.1"
         )
     ],
     targets: [
