@@ -5355,6 +5355,67 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "requiresCvv",
+            "printedName": "requiresCvv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13CardTokenDataV11requiresCvvSbSgvp",
+            "mangledName": "$s9MoneyHash13CardTokenDataV11requiresCvvSbSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13CardTokenDataV11requiresCvvSbSgvg",
+                "mangledName": "$s9MoneyHash13CardTokenDataV11requiresCvvSbSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -16567,6 +16628,128 @@
           },
           {
             "kind": "Var",
+            "name": "requireCvv",
+            "printedName": "requireCvv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9SavedCardV10requireCvvSbSgvp",
+            "mangledName": "$s9MoneyHash9SavedCardV10requireCvvSbSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9SavedCardV10requireCvvSbSgvg",
+                "mangledName": "$s9MoneyHash9SavedCardV10requireCvvSbSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cvvConfig",
+            "printedName": "cvvConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.CvvConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CvvConfig",
+                    "printedName": "MoneyHash.CvvConfig",
+                    "usr": "s:9MoneyHash9CvvConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9SavedCardV9cvvConfigAA03CvvF0VSgvp",
+            "mangledName": "$s9MoneyHash9SavedCardV9cvvConfigAA03CvvF0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.CvvConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CvvConfig",
+                        "printedName": "MoneyHash.CvvConfig",
+                        "usr": "s:9MoneyHash9CvvConfigV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9SavedCardV9cvvConfigAA03CvvF0VSgvg",
+                "mangledName": "$s9MoneyHash9SavedCardV9cvvConfigAA03CvvF0VSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "type",
             "printedName": "type",
             "children": [
@@ -16690,7 +16873,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:brand:last4:expiryMonth:expiryYear:country:logo:type:first6Digits:)",
+            "printedName": "init(id:brand:last4:expiryMonth:expiryYear:country:logo:requireCvv:cvvConfig:type:first6Digits:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16799,6 +16982,34 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.CvvConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CvvConfig",
+                    "printedName": "MoneyHash.CvvConfig",
+                    "usr": "s:9MoneyHash9CvvConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "MoneyHash.IntentMethodType?",
                 "children": [
                   {
@@ -16826,8 +17037,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash9SavedCardV2id5brand5last411expiryMonth0H4Year7country4logo4type12first6DigitsACSSSg_A6mA16IntentMethodTypeOSgAMtcfc",
-            "mangledName": "$s9MoneyHash9SavedCardV2id5brand5last411expiryMonth0H4Year7country4logo4type12first6DigitsACSSSg_A6mA16IntentMethodTypeOSgAMtcfc",
+            "usr": "s:9MoneyHash9SavedCardV2id5brand5last411expiryMonth0H4Year7country4logo10requireCvv9cvvConfig4type12first6DigitsACSSSg_A6OSbSgAA0nP0VSgAA16IntentMethodTypeOSgAOtcfc",
+            "mangledName": "$s9MoneyHash9SavedCardV2id5brand5last411expiryMonth0H4Year7country4logo10requireCvv9cvvConfig4type12first6DigitsACSSSg_A6OSbSgAA0nP0VSgAA16IntentMethodTypeOSgAOtcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -16890,6 +17101,184 @@
         "declKind": "Struct",
         "usr": "s:9MoneyHash9SavedCardV",
         "mangledName": "$s9MoneyHash9SavedCardV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CvvConfig",
+        "printedName": "CvvConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "digitsCount",
+            "printedName": "digitsCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9CvvConfigV11digitsCountSiSgvp",
+            "mangledName": "$s9MoneyHash9CvvConfigV11digitsCountSiSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9CvvConfigV11digitsCountSiSgvg",
+                "mangledName": "$s9MoneyHash9CvvConfigV11digitsCountSiSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(digitsCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CvvConfig",
+                "printedName": "MoneyHash.CvvConfig",
+                "usr": "s:9MoneyHash9CvvConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash9CvvConfigV11digitsCountACSiSg_tcfc",
+            "mangledName": "$s9MoneyHash9CvvConfigV11digitsCountACSiSg_tcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CvvConfig",
+                "printedName": "MoneyHash.CvvConfig",
+                "usr": "s:9MoneyHash9CvvConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash9CvvConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash9CvvConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash9CvvConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash9CvvConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash9CvvConfigV",
+        "mangledName": "$s9MoneyHash9CvvConfigV",
         "moduleName": "MoneyHash",
         "declAttributes": [
           "AccessControl",
@@ -22732,72 +23121,86 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 4917,
+      "offset": 5002,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 4984,
+      "offset": 5069,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5025,
+      "offset": 5110,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5080,
+      "offset": 5165,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5137,
+      "offset": 5222,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 4917,
+      "offset": 5267,
+      "length": 14,
+      "value": "\"requires_cvv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 5002,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 4984,
+      "offset": 5069,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5025,
+      "offset": 5110,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5080,
+      "offset": 5165,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5137,
+      "offset": 5222,
       "length": 17,
       "value": "\"payment_methods\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 5267,
+      "length": 14,
+      "value": "\"requires_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/BillingDetailFields.swift",
@@ -23649,58 +24052,100 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2209,
+      "offset": 2611,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2245,
+      "offset": 2647,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 2688,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2767,
+      "length": 13,
+      "value": "\"require_cvv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2806,
+      "length": 12,
+      "value": "\"cvv_config\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2865,
       "length": 5,
       "value": "\"bin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2209,
+      "offset": 2611,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2245,
+      "offset": 2647,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 2688,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2767,
+      "length": 13,
+      "value": "\"require_cvv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2806,
+      "length": 12,
+      "value": "\"cvv_config\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 2865,
       "length": 5,
       "value": "\"bin\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 3374,
+      "length": 14,
+      "value": "\"digits_count\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/SavedCard.swift",
+      "kind": "StringLiteral",
+      "offset": 3374,
+      "length": 14,
+      "value": "\"digits_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Wrapers\/CardFieldType.swift",
@@ -24029,7 +24474,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"2.2.1\""
+      "value": "\"2.2.7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

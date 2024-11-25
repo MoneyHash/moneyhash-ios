@@ -147,6 +147,7 @@ public struct CardTokenData : Swift.Codable {
   public let last4: Swift.String?
   public let logo: Swift.String?
   public let paymentMethods: [Swift.String]?
+  public let requiresCvv: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -446,9 +447,17 @@ public struct SavedCard : Swift.Codable {
   public let expiryYear: Swift.String?
   public let country: Swift.String?
   public let logo: Swift.String?
+  public let requireCvv: Swift.Bool?
+  public let cvvConfig: MoneyHash.CvvConfig?
   public let type: MoneyHash.IntentMethodType?
   public let first6Digits: Swift.String?
-  public init(id: Swift.String?, brand: Swift.String?, last4: Swift.String?, expiryMonth: Swift.String?, expiryYear: Swift.String?, country: Swift.String?, logo: Swift.String?, type: MoneyHash.IntentMethodType?, first6Digits: Swift.String?)
+  public init(id: Swift.String?, brand: Swift.String?, last4: Swift.String?, expiryMonth: Swift.String?, expiryYear: Swift.String?, country: Swift.String?, logo: Swift.String?, requireCvv: Swift.Bool?, cvvConfig: MoneyHash.CvvConfig?, type: MoneyHash.IntentMethodType?, first6Digits: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CvvConfig : Swift.Codable {
+  public let digitsCount: Swift.Int?
+  public init(digitsCount: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
