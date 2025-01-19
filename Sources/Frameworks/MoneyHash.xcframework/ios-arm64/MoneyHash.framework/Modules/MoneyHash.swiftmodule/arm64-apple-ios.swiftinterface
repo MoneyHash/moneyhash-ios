@@ -51,6 +51,7 @@ public struct ApplePayData : Swift.Codable {
   public let countryCode: Swift.String?
   public let merchantId: Swift.String?
   public let currencyCode: Swift.String?
+  public let supportedRegions: [Swift.String]?
   public let amount: Swift.Float?
   public let supportedNetworks: [Swift.String]?
   public func encode(to encoder: any Swift.Encoder) throws
@@ -116,6 +117,8 @@ public class MoneyHashSDKBuilder {
   public init()
   @discardableResult
   public func setPublicKey(_ key: Swift.String) -> MoneyHash.MoneyHashSDKBuilder
+  @discardableResult
+  public func setApplePayConfiguration(_ applePayConfiguration: MoneyHash.ApplePayConfiguration) -> MoneyHash.MoneyHashSDKBuilder
   public func build() -> any MoneyHash.MoneyHashSDK
   @objc deinit
 }
@@ -196,13 +199,14 @@ public struct IntentDetails : Swift.Codable {
   public let state: MoneyHash.IntentStateDetails?
   public let transaction: MoneyHash.Transaction?
   public let id: Swift.String?
+  public let lastUsedMethod: MoneyHash.LastUsedMethod?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol MoneyHashSDK {
   func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   #if compiler(>=5.3) && $AsyncAwait
-  func getMethods(currency: Swift.String, amount: Swift.Double?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHash.IntentOperation?) async throws -> MoneyHash.IntentMethods
+  func getMethods(currency: Swift.String, amount: Swift.Double?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHash.IntentOperation?, customFields: [Swift.String : MoneyHash.CustomFieldValue]?) async throws -> MoneyHash.IntentMethods
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func getMethods(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentMethods
@@ -217,7 +221,7 @@ public protocol MoneyHashSDK {
   func resetSelectedMethod(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.MethodsResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?) async throws -> MoneyHash.MethodsResult
+  func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?, useWalletBalance: Swift.Bool?) async throws -> MoneyHash.MethodsResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?, saveCard: Swift.Bool?) async throws -> MoneyHash.IntentDetails
@@ -518,6 +522,15 @@ public enum LogLevel {
     get
   }
 }
+public enum CustomFieldValue : Swift.Codable {
+  case boolean(value: Swift.Bool)
+  case float(value: Swift.Float)
+  case double(value: Swift.Double)
+  case string(value: Swift.String)
+  case int(value: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CardInputFieldState {
   public let isValid: Swift.Bool?
   public let errorMessage: Swift.String?
@@ -539,6 +552,14 @@ public struct EmbedInputStyle : Swift.Codable {
   public init(base: MoneyHash.EmbedInputViewStyle? = nil, error: MoneyHash.EmbedInputViewStyle? = nil, focus: MoneyHash.EmbedInputViewStyle? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum CollectibleBillingData : Swift.String, Swift.Codable {
+  case email
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct Transaction : Swift.Codable {
   public let id: Swift.String?
@@ -587,6 +608,13 @@ public struct NativePayReceipt : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ApplePayConfiguration : Swift.Codable {
+  public let collectibleBillingData: [MoneyHash.CollectibleBillingData]?
+  public let merchantDisplayName: Swift.String
+  public init(collectibleBillingData: [MoneyHash.CollectibleBillingData]?, merchantDisplayName: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum RenderStrategy : Swift.String, Swift.Codable {
   case redirect
   case popupIFrame
@@ -610,6 +638,25 @@ public enum NativePayData : Swift.Codable {
   case applePay(MoneyHash.ApplePayData)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct LastUsedMethod : Swift.Codable {
+  public let type: MoneyHash.LastUsedMethodType?
+  public let id: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum LastUsedMethodType : Swift.String, Swift.Codable {
+  case customerBalance
+  case savedCard
+  case paymentMethod
+  public var displayValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct AmountData : Swift.Codable {
   public let value: Swift.String?
@@ -651,9 +698,15 @@ extension MoneyHash.CardFieldType : Swift.Hashable {}
 extension MoneyHash.CardFieldType : Swift.RawRepresentable {}
 extension MoneyHash.LogLevel : Swift.Equatable {}
 extension MoneyHash.LogLevel : Swift.Hashable {}
+extension MoneyHash.CollectibleBillingData : Swift.Equatable {}
+extension MoneyHash.CollectibleBillingData : Swift.Hashable {}
+extension MoneyHash.CollectibleBillingData : Swift.RawRepresentable {}
 extension MoneyHash.IntentStatus : Swift.Equatable {}
 extension MoneyHash.IntentStatus : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.RawRepresentable {}
 extension MoneyHash.RenderStrategy : Swift.Equatable {}
 extension MoneyHash.RenderStrategy : Swift.Hashable {}
 extension MoneyHash.RenderStrategy : Swift.RawRepresentable {}
+extension MoneyHash.LastUsedMethodType : Swift.Equatable {}
+extension MoneyHash.LastUsedMethodType : Swift.Hashable {}
+extension MoneyHash.LastUsedMethodType : Swift.RawRepresentable {}
