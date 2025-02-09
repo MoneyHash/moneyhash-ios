@@ -697,6 +697,1116 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "InstallmentPlan",
+        "printedName": "InstallmentPlan",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV2idSSSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV2idSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV2idSSSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV2idSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV2idSSSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV2idSSSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV2idSSSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV2idSSSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "installmentPeriod",
+            "printedName": "installmentPeriod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV17installmentPeriodSiSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interestRate",
+            "printedName": "interestRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV12interestRateSdSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV12interestRateSdSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV12interestRateSdSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV12interestRateSdSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV12interestRateSdSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV12interestRateSdSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV12interestRateSdSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV12interestRateSdSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.AmountData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AmountData",
+                    "printedName": "MoneyHash.AmountData",
+                    "usr": "s:9MoneyHash10AmountDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.AmountData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AmountData",
+                        "printedName": "MoneyHash.AmountData",
+                        "usr": "s:9MoneyHash10AmountDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.AmountData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AmountData",
+                        "printedName": "MoneyHash.AmountData",
+                        "usr": "s:9MoneyHash10AmountDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV6amountAA10AmountDataVSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upfrontFees",
+            "printedName": "upfrontFees",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV11upfrontFeesSdSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuerCode",
+            "printedName": "issuerCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash15InstallmentPlanV10issuerCodeSSSgvp",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV10issuerCodeSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV10issuerCodeSSSgvg",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV10issuerCodeSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV10issuerCodeSSSgvs",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV10issuerCodeSSSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash15InstallmentPlanV10issuerCodeSSSgvM",
+                "mangledName": "$s9MoneyHash15InstallmentPlanV10issuerCodeSSSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlan",
+                "printedName": "MoneyHash.InstallmentPlan",
+                "usr": "s:9MoneyHash15InstallmentPlanV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash15InstallmentPlanV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15InstallmentPlanV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash15InstallmentPlanV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash15InstallmentPlanV",
+        "mangledName": "$s9MoneyHash15InstallmentPlanV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstallmentPlanData",
+        "printedName": "InstallmentPlanData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash19InstallmentPlanDataV2idSSSgvp",
+            "mangledName": "$s9MoneyHash19InstallmentPlanDataV2idSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV2idSSSgvg",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV2idSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV2idSSSgvs",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV2idSSSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV2idSSSgvM",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV2idSSSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuerCode",
+            "printedName": "issuerCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvp",
+            "mangledName": "$s9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvg",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvs",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvs",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvM",
+                "mangledName": "$s9MoneyHash19InstallmentPlanDataV10issuerCodeSSSgvM",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:issuerCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlanData",
+                "printedName": "MoneyHash.InstallmentPlanData",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash19InstallmentPlanDataV2id10issuerCodeACSSSg_AFtcfc",
+            "mangledName": "$s9MoneyHash19InstallmentPlanDataV2id10issuerCodeACSSSg_AFtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlanData",
+                "printedName": "MoneyHash.InstallmentPlanData",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash19InstallmentPlanDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash19InstallmentPlanDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash19InstallmentPlanDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash19InstallmentPlanDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash19InstallmentPlanDataV",
+        "mangledName": "$s9MoneyHash19InstallmentPlanDataV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MethodsResult",
         "printedName": "MethodsResult",
         "children": [
@@ -4751,6 +5861,82 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "installmentPlans",
+            "printedName": "installmentPlans",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntentStateDetails.Type) -> ([MoneyHash.InstallmentPlan]?) -> MoneyHash.IntentStateDetails",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([MoneyHash.InstallmentPlan]?) -> MoneyHash.IntentStateDetails",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentStateDetails",
+                        "printedName": "MoneyHash.IntentStateDetails",
+                        "usr": "s:9MoneyHash18IntentStateDetailsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(plans: [MoneyHash.InstallmentPlan]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[MoneyHash.InstallmentPlan]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[MoneyHash.InstallmentPlan]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "InstallmentPlan",
+                                    "printedName": "MoneyHash.InstallmentPlan",
+                                    "usr": "s:9MoneyHash15InstallmentPlanV"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntentStateDetails.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentStateDetails",
+                        "printedName": "MoneyHash.IntentStateDetails",
+                        "usr": "s:9MoneyHash18IntentStateDetailsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash18IntentStateDetailsO16installmentPlansyACSayAA15InstallmentPlanVGSg_tcACmF",
+            "mangledName": "$s9MoneyHash18IntentStateDetailsO16installmentPlansyACSayAA15InstallmentPlanVGSg_tcACmF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
@@ -8294,7 +9480,7 @@
           {
             "kind": "Function",
             "name": "proceedWithMethod",
-            "printedName": "proceedWithMethod(intentId:intentType:selectedMethodId:methodType:metaData:useWalletBalance:)",
+            "printedName": "proceedWithMethod(intentId:intentType:selectedMethodId:methodType:metaData:useWalletBalance:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8353,11 +9539,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHash.InstallmentPlanData",
+                    "usr": "s:9MoneyHash19InstallmentPlanDataV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP17proceedWithMethod8intentId0G4Type08selectedfH006methodI08metaData16useWalletBalanceAA13MethodsResultVSS_AA06IntentI0OSSAA0sfI0OAA0sf4MetaM0VSgSbSgtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP17proceedWithMethod8intentId0G4Type08selectedfH006methodI08metaData16useWalletBalanceAA13MethodsResultVSS_AA06IntentI0OSSAA0sfI0OAA0sf4MetaM0VSgSbSgtYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP17proceedWithMethod8intentId0G4Type08selectedfH006methodI08metaData16useWalletBalance015installmentPlanM0AA13MethodsResultVSS_AA06IntentI0OSSAA0ufI0OAA0uf4MetaM0VSgSbSgAA011InstallmentrM0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP17proceedWithMethod8intentId0G4Type08selectedfH006methodI08metaData16useWalletBalance015installmentPlanM0AA13MethodsResultVSS_AA06IntentI0OSSAA0ufI0OAA0uf4MetaM0VSgSbSgAA011InstallmentrM0VSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8372,7 +9572,7 @@
           {
             "kind": "Function",
             "name": "submitForm",
-            "printedName": "submitForm(intentID:selectedMethod:billingData:shippingData:vaultData:saveCard:)",
+            "printedName": "submitForm(intentID:selectedMethod:billingData:shippingData:vaultData:saveCard:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8475,11 +9675,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHash.InstallmentPlanData",
+                    "usr": "s:9MoneyHash19InstallmentPlanDataV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCardAA13IntentDetailsVSS_SSSDyS2SGSgAnA05VaultK0VSgSbSgtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCardAA13IntentDetailsVSS_SSSDyS2SGSgAnA05VaultK0VSgSbSgtYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCard015installmentPlanK0AA13IntentDetailsVSS_SSSDyS2SGSgAoA05VaultK0VSgSbSgAA011InstallmentqK0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP10submitForm8intentID14selectedMethod11billingData08shippingK005vaultK08saveCard015installmentPlanK0AA13IntentDetailsVSS_SSSDyS2SGSgAoA05VaultK0VSgSbSgAA011InstallmentqK0VSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8494,7 +9708,7 @@
           {
             "kind": "Function",
             "name": "submitCardCVV",
-            "printedName": "submitCardCVV(intentID:cvv:)",
+            "printedName": "submitCardCVV(intentID:cvv:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8513,11 +9727,25 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHash.InstallmentPlanData",
+                    "usr": "s:9MoneyHash19InstallmentPlanDataV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP13submitCardCVV8intentID3cvvAA13IntentDetailsVSS_SStYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP13submitCardCVV8intentID3cvvAA13IntentDetailsVSS_SStYaKF",
+            "usr": "s:9MoneyHash0aB3SDKP13submitCardCVV8intentID3cvv19installmentPlanDataAA13IntentDetailsVSS_SSAA011InstallmentkL0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP13submitCardCVV8intentID3cvv19installmentPlanDataAA13IntentDetailsVSS_SSAA011InstallmentkL0VSgtYaKF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -8887,6 +10115,104 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectInstallmentPlan",
+            "printedName": "selectInstallmentPlan(intentId:installmentPlanData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IntentDetails",
+                "printedName": "MoneyHash.IntentDetails",
+                "usr": "s:9MoneyHash13IntentDetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentPlanData",
+                "printedName": "MoneyHash.InstallmentPlanData",
+                "usr": "s:9MoneyHash19InstallmentPlanDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP21selectInstallmentPlan8intentId011installmentF4DataAA13IntentDetailsVSS_AA0efJ0VtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP21selectInstallmentPlan8intentId011installmentF4DataAA13IntentDetailsVSS_AA0efJ0VtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInstallmentPlans",
+            "printedName": "getInstallmentPlans(amount:currency:first6Digits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHash.InstallmentPlan]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlan",
+                    "printedName": "MoneyHash.InstallmentPlan",
+                    "usr": "s:9MoneyHash15InstallmentPlanV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP19getInstallmentPlans6amount8currency12first6DigitsSayAA0E4PlanVGSd_S2SSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP19getInstallmentPlans6amount8currency12first6DigitsSayAA0E4PlanVGSd_S2SSgtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -9095,7 +10421,7 @@
           {
             "kind": "Function",
             "name": "pay",
-            "printedName": "pay(intentId:cardData:saveCard:billingData:shippingData:)",
+            "printedName": "pay(intentId:cardData:saveCard:billingData:shippingData:installmentPlanData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9176,11 +10502,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.InstallmentPlanData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentPlanData",
+                    "printedName": "MoneyHash.InstallmentPlanData",
+                    "usr": "s:9MoneyHash19InstallmentPlanDataV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9MoneyHash8CardFormC3pay8intentId8cardData04saveC007billingI008shippingI0AA13IntentDetailsVSS_AA05VaultI0VSbSDyS2SGSgAOtYaKF",
-            "mangledName": "$s9MoneyHash8CardFormC3pay8intentId8cardData04saveC007billingI008shippingI0AA13IntentDetailsVSS_AA05VaultI0VSbSDyS2SGSgAOtYaKF",
+            "usr": "s:9MoneyHash8CardFormC3pay8intentId8cardData04saveC007billingI008shippingI0015installmentPlanI0AA13IntentDetailsVSS_AA05VaultI0VSbSDyS2SGSgApA011InstallmentnI0VSgtYaKF",
+            "mangledName": "$s9MoneyHash8CardFormC3pay8intentId8cardData04saveC007billingI008shippingI0015installmentPlanI0AA13IntentDetailsVSS_AA05VaultI0VSbSDyS2SGSgApA011InstallmentnI0VSgtYaKF",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -24925,6 +26265,104 @@
       "value": "0.0"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 20,
+      "value": "\"installment_period\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 15,
+      "value": "\"interest_rate\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 14,
+      "value": "\"upfront_fees\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 20,
+      "value": "\"installment_period\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 15,
+      "value": "\"interest_rate\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 14,
+      "value": "\"upfront_fees\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 13,
+      "value": "\"issuer_code\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/InstallmentPlans.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 13,
+      "value": "\"issuer_code\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/MethodsResult.swift",
       "kind": "StringLiteral",
       "offset": 1197,
@@ -25144,238 +26582,252 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2090,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2135,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2032,
+      "offset": 2180,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2095,
+      "offset": 2243,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2162,
+      "offset": 2310,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2250,
+      "offset": 2398,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2441,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2337,
+      "offset": 2485,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 2527,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2425,
+      "offset": 2573,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2479,
+      "offset": 2627,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2680,
+      "length": 19,
+      "value": "\"installment_plans\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2090,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2135,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2032,
+      "offset": 2180,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2095,
+      "offset": 2243,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2162,
+      "offset": 2310,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2250,
+      "offset": 2398,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2441,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2337,
+      "offset": 2485,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 2527,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2425,
+      "offset": 2573,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2479,
+      "offset": 2627,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5002,
+      "offset": 2680,
+      "length": 19,
+      "value": "\"installment_plans\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 5316,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 5383,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5110,
+      "offset": 5424,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5165,
+      "offset": 5479,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5222,
+      "offset": 5536,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5267,
+      "offset": 5581,
       "length": 14,
       "value": "\"requires_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5002,
+      "offset": 5316,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 5383,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5110,
+      "offset": 5424,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5165,
+      "offset": 5479,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5222,
+      "offset": 5536,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5267,
+      "offset": 5581,
       "length": 14,
       "value": "\"requires_cvv\""
     },
@@ -26693,7 +28145,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"2.2.20\""
+      "value": "\"2.2.21\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

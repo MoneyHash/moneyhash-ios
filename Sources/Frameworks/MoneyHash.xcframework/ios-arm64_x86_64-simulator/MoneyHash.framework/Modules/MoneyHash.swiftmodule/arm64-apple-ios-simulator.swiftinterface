@@ -26,6 +26,23 @@ public struct Intent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct InstallmentPlan : Swift.Codable {
+  public var id: Swift.String?
+  public var installmentPeriod: Swift.Int?
+  public var interestRate: Swift.Double?
+  public var amount: MoneyHash.AmountData?
+  public var upfrontFees: Swift.Double?
+  public var issuerCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InstallmentPlanData : Swift.Codable {
+  public var id: Swift.String?
+  public var issuerCode: Swift.String?
+  public init(id: Swift.String? = nil, issuerCode: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct MethodsResult : Swift.Codable {
   public let intentData: MoneyHash.IntentDetails?
   public let methods: MoneyHash.IntentMethods?
@@ -136,6 +153,7 @@ public enum IntentStateDetails : Swift.Codable {
   case cardIntentSuccess
   case cardIntentFailed
   case nativePay(nativePayData: MoneyHash.NativePayData?)
+  case installmentPlans(plans: [MoneyHash.InstallmentPlan]?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -221,13 +239,13 @@ public protocol MoneyHashSDK {
   func resetSelectedMethod(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.MethodsResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?, useWalletBalance: Swift.Bool?) async throws -> MoneyHash.MethodsResult
+  func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?, useWalletBalance: Swift.Bool?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.MethodsResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?, saveCard: Swift.Bool?) async throws -> MoneyHash.IntentDetails
+  func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?, saveCard: Swift.Bool?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func submitCardCVV(intentID: Swift.String, cvv: Swift.String) async throws -> MoneyHash.IntentDetails
+  func submitCardCVV(intentID: Swift.String, cvv: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
   #endif
   func setLogLevel(logLevel: MoneyHash.LogLevel)
   #if compiler(>=5.3) && $AsyncAwait
@@ -248,6 +266,12 @@ public protocol MoneyHashSDK {
   func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
   #endif
   func setPublicKey(_ key: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData) async throws -> MoneyHash.IntentDetails
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
+  #endif
 }
 public struct EmbedLoaderStyle : Swift.Codable {
   public init(backgroundColor: Swift.String? = nil, color: Swift.String? = nil)
@@ -259,7 +283,7 @@ public struct EmbedLoaderStyle : Swift.Codable {
   public func collect() async throws -> MoneyHash.VaultData?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?) async throws -> MoneyHash.IntentDetails
+  public func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
