@@ -3182,6 +3182,34 @@
           },
           {
             "kind": "Function",
+            "name": "setConfiguration",
+            "printedName": "setConfiguration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardFormBuilder",
+                "printedName": "MoneyHash.CardFormBuilder",
+                "usr": "s:9MoneyHash15CardFormBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardFormConfiguration",
+                "printedName": "MoneyHash.CardFormConfiguration",
+                "usr": "s:9MoneyHash21CardFormConfigurationC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash15CardFormBuilderC16setConfigurationyAcA0cdG0CF",
+            "mangledName": "$s9MoneyHash15CardFormBuilderC16setConfigurationyAcA0cdG0CF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setCardNumberField",
             "printedName": "setCardNumberField(handler:)",
             "children": [
@@ -10222,6 +10250,185 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneyHashShared",
+        "printedName": "MoneyHashShared",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardFormConfiguration",
+        "printedName": "CardFormConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isCardHolderNameRequired",
+            "printedName": "isCardHolderNameRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredSbvp",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredSbvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredSbvg",
+                "mangledName": "$s9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredSbvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isCardHolderNameRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardFormConfiguration",
+                "printedName": "MoneyHash.CardFormConfiguration",
+                "usr": "s:9MoneyHash21CardFormConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredACSb_tcfc",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC02isC18HolderNameRequiredACSb_tcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardFormConfiguration",
+                "printedName": "MoneyHash.CardFormConfiguration",
+                "usr": "s:9MoneyHash21CardFormConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash21CardFormConfigurationC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash21CardFormConfigurationC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9MoneyHash21CardFormConfigurationC",
+        "mangledName": "$s9MoneyHash21CardFormConfigurationC",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -28145,7 +28352,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"2.2.21\""
+      "value": "\"2.2.22\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
