@@ -18,7 +18,7 @@ let package = Package(
         .package(
             name: "MoneyHashShared",
             url: "https://github.com/MoneyHash/moneyhash-spm",
-            from: "2.2.27"
+            from: "2.2.32-dev"
         )
     ],
     targets: [
