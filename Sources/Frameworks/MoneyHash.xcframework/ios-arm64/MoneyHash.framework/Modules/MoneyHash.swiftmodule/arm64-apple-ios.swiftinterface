@@ -157,6 +157,7 @@ public enum IntentStateDetails : Swift.Codable {
   case cardIntentFailed
   case nativePay(nativePayData: MoneyHash.NativePayData?)
   case installmentPlans(plans: [MoneyHash.InstallmentPlan]?)
+  case processing
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -268,22 +269,10 @@ public protocol MoneyHashSDK {
   func submitPaymentReceipt(intentId: Swift.String, nativePayReceipt: MoneyHash.NativePayReceipt) async throws -> MoneyHash.IntentDetails
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.IntentDetails
+  @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func proceedWithApplePay(intentID: Swift.String, depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String) async throws -> MoneyHash.NativePayReceipt
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
+  @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
   #endif
   func isDeviceCompatible() -> Swift.Bool
   func setLocale(_ locale: MoneyHash.MHLocale)

@@ -6120,6 +6120,46 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "processing",
+            "printedName": "processing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntentStateDetails.Type) -> MoneyHash.IntentStateDetails",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntentStateDetails",
+                    "printedName": "MoneyHash.IntentStateDetails",
+                    "usr": "s:9MoneyHash18IntentStateDetailsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntentStateDetails.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntentStateDetails",
+                        "printedName": "MoneyHash.IntentStateDetails",
+                        "usr": "s:9MoneyHash18IntentStateDetailsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash18IntentStateDetailsO10processingyA2CmF",
+            "mangledName": "$s9MoneyHash18IntentStateDetailsO10processingyA2CmF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
@@ -10699,206 +10739,6 @@
           },
           {
             "kind": "Function",
-            "name": "proceedWithApplePay",
-            "printedName": "proceedWithApplePay(intentID:depositAmount:applePayData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "IntentDetails",
-                "printedName": "MoneyHash.IntentDetails",
-                "usr": "s:9MoneyHash13IntentDetailsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ApplePayData",
-                "printedName": "MoneyHash.ApplePayData",
-                "usr": "s:9MoneyHash12ApplePayDataV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount05appleG4DataAA13IntentDetailsVSS_SfAA0fgM0VtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount05appleG4DataAA13IntentDetailsVSS_SfAA0fgM0VtYaKF",
-            "moduleName": "MoneyHash",
-            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
-            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "proceedWithApplePay",
-            "printedName": "proceedWithApplePay(intentID:depositAmount:merchantIdentifier:currencyCode:countryCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "IntentDetails",
-                "printedName": "MoneyHash.IntentDetails",
-                "usr": "s:9MoneyHash13IntentDetailsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO0AA13IntentDetailsVSS_SfS3StYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO0AA13IntentDetailsVSS_SfS3StYaKF",
-            "moduleName": "MoneyHash",
-            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
-            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "proceedWithApplePay",
-            "printedName": "proceedWithApplePay(intentID:depositAmount:merchantIdentifier:currencyCode:countryCode:supportedNetworks:merchantCapabilities:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "IntentDetails",
-                "printedName": "MoneyHash.IntentDetails",
-                "usr": "s:9MoneyHash13IntentDetailsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO017supportedNetworks0L12CapabilitiesAA13IntentDetailsVSS_SfS3SSaySSGSgAOtYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP19proceedWithApplePay8intentID13depositAmount18merchantIdentifier12currencyCode07countryO017supportedNetworks0L12CapabilitiesAA13IntentDetailsVSS_SfS3SSaySSGSgAOtYaKF",
-            "moduleName": "MoneyHash",
-            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
-            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "generateApplePayReceipt",
             "printedName": "generateApplePayReceipt(depositAmount:applePayData:)",
             "children": [
@@ -10929,56 +10769,7 @@
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "generateApplePayReceipt",
-            "printedName": "generateApplePayReceipt(depositAmount:merchantIdentifier:currencyCode:countryCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NativePayReceipt",
-                "printedName": "MoneyHash.NativePayReceipt",
-                "usr": "s:9MoneyHash16NativePayReceiptV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativefG0VSf_S3StYaKF",
-            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM0AA06NativefG0VSf_S3StYaKF",
-            "moduleName": "MoneyHash",
-            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
-            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
-            "protocolReq": true,
-            "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -11073,6 +10864,7 @@
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "throwing": true,
@@ -28995,252 +28787,266 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2090,
+      "offset": 2165,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2135,
+      "offset": 2210,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2255,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2318,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2310,
+      "offset": 2385,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2473,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2516,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2485,
+      "offset": 2560,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2602,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2573,
+      "offset": 2648,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2702,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2755,
       "length": 19,
       "value": "\"installment_plans\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2090,
+      "offset": 2801,
+      "length": 12,
+      "value": "\"processing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 2165,
       "length": 18,
       "value": "\"method_selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2135,
+      "offset": 2210,
       "length": 13,
       "value": "\"intent_form\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2255,
       "length": 18,
       "value": "\"intent_processed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2318,
       "length": 33,
       "value": "\"transaction_waiting_user_action\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2310,
+      "offset": 2385,
       "length": 20,
       "value": "\"transaction_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2398,
+      "offset": 2473,
       "length": 13,
       "value": "\"form_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
+      "offset": 2516,
       "length": 15,
       "value": "\"url_to_render\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2485,
+      "offset": 2560,
       "length": 16,
       "value": "\"saved_card_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2602,
       "length": 12,
       "value": "\"native_pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2573,
+      "offset": 2648,
       "length": 21,
       "value": "\"card_intent_success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2702,
       "length": 20,
       "value": "\"card_intent_failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2755,
       "length": 19,
       "value": "\"installment_plans\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5316,
+      "offset": 2801,
+      "length": 12,
+      "value": "\"processing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
+      "kind": "StringLiteral",
+      "offset": 5505,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5383,
+      "offset": 5572,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5424,
+      "offset": 5613,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5479,
+      "offset": 5668,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5536,
+      "offset": 5725,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 5770,
       "length": 14,
       "value": "\"requires_cvv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5316,
+      "offset": 5505,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5383,
+      "offset": 5572,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5424,
+      "offset": 5613,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5479,
+      "offset": 5668,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5536,
+      "offset": 5725,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 5770,
       "length": 14,
       "value": "\"requires_cvv\""
     },
@@ -30423,112 +30229,112 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3191,
+      "offset": 3196,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3281,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3345,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3386,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3429,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3473,
+      "offset": 3478,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3532,
+      "offset": 3537,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3604,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3191,
+      "offset": 3196,
       "length": 14,
       "value": "\"created_date\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3281,
       "length": 17,
       "value": "\"amount_currency\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3345,
       "length": 13,
       "value": "\"method_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3381,
+      "offset": 3386,
       "length": 14,
       "value": "\"billing_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3424,
+      "offset": 3429,
       "length": 15,
       "value": "\"custom_fields\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3473,
+      "offset": 3478,
       "length": 21,
       "value": "\"custom_form_answers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3532,
+      "offset": 3537,
       "length": 25,
       "value": "\"external_action_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3604,
       "length": 29,
       "value": "\"provider_transaction_fields\""
     },
@@ -30592,27 +30398,27 @@
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 8,
-      "value": "\"2.2.34\""
+      "length": 7,
+      "value": "\"3.0.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 136,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 174,
+      "offset": 173,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 213,
+      "offset": 212,
       "length": 6,
       "value": "\"lang\""
     },
