@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MoneyHash
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MoneyHash
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Combine
 import Foundation
 @_exported import MoneyHash
@@ -240,58 +241,26 @@ public struct IntentDetails : Swift.Codable {
 public protocol MoneyHashSDK {
   func renderForm(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   @_Concurrency.MainActor func renderURL(on viewController: UIKit.UIViewController, urlToRender: Foundation.URL, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, intentType: MoneyHash.IntentType, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
   func getMethods(currency: Swift.String, amount: Swift.Double?, customer: Swift.String?, flowId: Swift.String?, operation: MoneyHash.IntentOperation?, customFields: [Swift.String : MoneyHash.CustomFieldValue]?) async throws -> MoneyHash.IntentMethods
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func getMethods(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentMethods
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func getIntentDetails(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func deleteSavedCard(cardTokenId: Swift.String, intentSecret: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func resetSelectedMethod(intentId: Swift.String, intentType: MoneyHash.IntentType) async throws -> MoneyHash.MethodsResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func proceedWithMethod(intentId: Swift.String, intentType: MoneyHash.IntentType, selectedMethodId: Swift.String, methodType: MoneyHash.IntentMethodType, metaData: MoneyHash.IntentMethodMetaData?, useWalletBalance: Swift.Bool?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.MethodsResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func submitForm(intentID: Swift.String, selectedMethod: Swift.String, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, vaultData: MoneyHash.VaultData?, saveCard: Swift.Bool?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func submitCardCVV(intentID: Swift.String, cvv: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
-  #endif
   func setLogLevel(logLevel: MoneyHash.LogLevel)
-  #if compiler(>=5.3) && $AsyncAwait
   func submitPaymentReceipt(intentId: Swift.String, nativePayReceipt: MoneyHash.NativePayReceipt) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
-  #endif
   func isDeviceCompatible() -> Swift.Bool
   func setLocale(_ locale: MoneyHash.MHLocale)
-  #if compiler(>=5.3) && $AsyncAwait
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
-  #endif
   func setPublicKey(_ key: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func getApplePayBinLookup(receipt: MoneyHash.NativePayReceipt, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHash.LookupData
-  #endif
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
@@ -307,15 +276,11 @@ public struct EmbedLoaderStyle : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class CardForm {
-  #if compiler(>=5.3) && $AsyncAwait
   public func collect() async throws -> MoneyHash.VaultData?
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
-  #endif
+  public func binLookup(cardData: MoneyHash.VaultData) async throws -> MoneyHash.LookupData?
+  public func binLookup() async throws -> MoneyHash.LookupData?
   public var isValid: Swift.Bool {
     get
   }
@@ -564,16 +529,16 @@ public enum CardFieldType : Swift.String, Swift.CodingKey, Swift.Codable {
 public protocol MHStatus {
   static var cancelled: Self { get }
 }
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class MHViewController<T> : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MHViewController<T> : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
 public enum LogLevel {
   case verbose
@@ -704,11 +669,12 @@ public enum RenderStrategy : Swift.String, Swift.Codable {
   }
 }
 @available(iOS 15.0, *)
-@_Concurrency.MainActor(unsafe) public struct SecureTextField<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUI.ViewBuilder placeholder: @escaping () -> Content)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+@_Concurrency.MainActor @preconcurrency public struct SecureTextField<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 15.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s9MoneyHash15SecureTextFieldV4bodyQrvp", 0) __<Content>
 }
 public enum NativePayData : Swift.Codable {
@@ -784,6 +750,8 @@ extension MoneyHash.IntentStatus : Swift.RawRepresentable {}
 extension MoneyHash.RenderStrategy : Swift.Equatable {}
 extension MoneyHash.RenderStrategy : Swift.Hashable {}
 extension MoneyHash.RenderStrategy : Swift.RawRepresentable {}
+@available(iOS 15.0, *)
+extension MoneyHash.SecureTextField : Swift.Sendable {}
 extension MoneyHash.LastUsedMethodType : Swift.Equatable {}
 extension MoneyHash.LastUsedMethodType : Swift.Hashable {}
 extension MoneyHash.LastUsedMethodType : Swift.RawRepresentable {}
