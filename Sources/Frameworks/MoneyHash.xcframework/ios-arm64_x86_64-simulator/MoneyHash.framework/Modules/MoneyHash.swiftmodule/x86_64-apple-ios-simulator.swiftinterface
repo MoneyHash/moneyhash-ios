@@ -346,6 +346,7 @@ public struct EmbedInputViewStyle : Swift.Codable {
 }
 public struct VaultData : Swift.Codable {
   public let firstSixDigits: Swift.String?
+  public let firstEightDigits: Swift.String?
   public let lastFourDigits: Swift.String?
   public let cardScheme: Swift.String?
   public let cardHolderName: Swift.String?

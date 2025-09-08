@@ -14346,6 +14346,67 @@
           },
           {
             "kind": "Var",
+            "name": "firstEightDigits",
+            "printedName": "firstEightDigits",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash9VaultDataV16firstEightDigitsSSSgvp",
+            "mangledName": "$s9MoneyHash9VaultDataV16firstEightDigitsSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash9VaultDataV16firstEightDigitsSSSgvg",
+                "mangledName": "$s9MoneyHash9VaultDataV16firstEightDigitsSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "lastFourDigits",
             "printedName": "lastFourDigits",
             "children": [
@@ -30039,70 +30100,77 @@
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 2123,
       "length": 18,
       "value": "\"first_six_digits\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2024,
+      "offset": 2174,
+      "length": 20,
+      "value": "\"first_eight_digits\""
+    },
+    {
+      "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
+      "kind": "StringLiteral",
+      "offset": 2225,
       "length": 18,
       "value": "\"last_four_digits\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2069,
+      "offset": 2270,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2314,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2158,
+      "offset": 2359,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2199,
+      "offset": 2400,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2236,
+      "offset": 2437,
       "length": 9,
       "value": "\"is_live\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2474,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2313,
+      "offset": 2514,
       "length": 12,
       "value": "\"card_token\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/Models\/VaultData.swift",
       "kind": "StringLiteral",
-      "offset": 2367,
+      "offset": 2568,
       "length": 11,
       "value": "\"save_card\""
     },
@@ -30573,7 +30641,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"3.0.5\""
+      "value": "\"3.0.7\""
     },
     {
       "filePath": "\/Users\/kerollosnabil\/Desktop\/moneyHash\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
