@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MoneyHashShared",
+        "repositoryURL": "https://github.com/MoneyHash/moneyhash-spm",
+        "state": {
+          "branch": null,
+          "revision": "15946d92a13c0e15a05664c25cde892d849bcacf",
+          "version": "3.0.8"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
