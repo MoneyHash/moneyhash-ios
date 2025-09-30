@@ -14,6 +14,24 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum SubscriptionStatus : Swift.String, Swift.Codable {
+  case new
+  case trial
+  case incomplete
+  case active
+  case pastDue
+  case pendingCancellation
+  case cancelled
+  case ended
+  case terminated
+  case paused
+  public init(kotlin kotlinStatus: MoneyHashShared.SubscriptionStatus)
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct Intent : Swift.Codable {
   public let id: Swift.String?
   public let amount: MoneyHash.AmountData?
@@ -235,6 +253,7 @@ public struct IntentDetails : Swift.Codable {
   public let id: Swift.String?
   public let lastUsedMethod: MoneyHash.LastUsedMethod?
   public let paymentStatus: MoneyHash.PaymentStatus?
+  public let subscriptionInfo: MoneyHash.SubscriptionInfo?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -261,6 +280,10 @@ public protocol MoneyHashSDK {
   func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData) async throws -> MoneyHash.IntentDetails
   func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
   func getApplePayBinLookup(receipt: MoneyHash.NativePayReceipt, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHash.LookupData
+  func getSubscriptionPlans(planGroupId: Swift.String, customerId: Swift.String) async throws -> [MoneyHash.SubscriptionPlan]
+  func selectSubscriptionPlan(planGroupId: Swift.String, customerId: Swift.String, planId: Swift.String) async throws -> MoneyHash.IntentDetails
+  func getSubscriptionPlanGroups(limit: Swift.Int?, offset: Swift.Int?, currency: Swift.String?) async throws -> MoneyHash.SubscriptionPlanGroupsResponse
+  func renderSubscriptionEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
@@ -456,6 +479,23 @@ public enum IntentOperation : Swift.String, Swift.Codable {
     get
   }
 }
+public struct SubscriptionPlanGroupsResponse : Swift.Codable {
+  public let count: Swift.Int?
+  public let hasNext: Swift.Bool?
+  public let hasPrevious: Swift.Bool?
+  public let planGroups: [MoneyHash.SubscriptionPlanGroup]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SubscriptionPlanGroup : Swift.Codable {
+  public let id: Swift.String?
+  public let name: Swift.String?
+  public let currency: Swift.String?
+  public let created: Swift.String?
+  public let plans: [MoneyHash.SubscriptionPlan]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct PaymentMethod : MoneyHash.MoneyHashMethod, Swift.Codable {
   public let id: Swift.String?
   public let title: Swift.String?
@@ -571,6 +611,13 @@ public struct CardInputFieldState {
   public init(isValid: Swift.Bool? = nil, errorMessage: Swift.String? = nil, isOnFocused: Swift.Bool = false, inputLength: Swift.Int)
   public static let defaultState: MoneyHash.CardInputFieldState
 }
+public struct SubscriptionInfo : Swift.Codable {
+  public let plan: MoneyHash.SubscriptionPlan?
+  public let status: MoneyHash.SubscriptionStatus?
+  public let id: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct CustomerBalance : Swift.Codable {
   public let id: Swift.String?
   public let balance: Swift.Double?
@@ -669,6 +716,26 @@ public enum RenderStrategy : Swift.String, Swift.Codable {
     get
   }
 }
+public struct SubscriptionPlan : Swift.Codable {
+  public let id: Swift.String?
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public let currency: Swift.String?
+  public let amount: Swift.Double?
+  public let oneTimeFee: Swift.Double?
+  public let recurrency: Swift.Int?
+  public let recurrencyUnit: Swift.String?
+  public let recurringCycles: Swift.Int?
+  public let trialPeriod: Swift.Int?
+  public let discountAmount: Swift.Double?
+  public let discountPercentage: Swift.Double?
+  public let discountCycles: Swift.Int?
+  public let isLive: Swift.Bool?
+  public let alreadySubscribed: Swift.Bool?
+  public let created: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @available(iOS 15.0, *)
 @_Concurrency.MainActor @preconcurrency public struct SecureTextField<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
@@ -710,6 +777,9 @@ public struct AmountData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension MoneyHash.SubscriptionStatus : Swift.Equatable {}
+extension MoneyHash.SubscriptionStatus : Swift.Hashable {}
+extension MoneyHash.SubscriptionStatus : Swift.RawRepresentable {}
 extension MoneyHash.MHLocale : Swift.Equatable {}
 extension MoneyHash.MHLocale : Swift.Hashable {}
 extension MoneyHash.MHLocale : Swift.RawRepresentable {}
