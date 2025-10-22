@@ -68,6 +68,21 @@ public struct MethodsResult : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum BankAccountTokenizationStatus : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case successful
+  case pendingApproval
+  case failed
+  public static func from(_ statusString: Swift.String) -> MoneyHash.BankAccountTokenizationStatus?
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [MoneyHash.BankAccountTokenizationStatus]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [MoneyHash.BankAccountTokenizationStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum MHLocale : Swift.String, Swift.Codable {
   case arabic
   case english
@@ -284,6 +299,7 @@ public protocol MoneyHashSDK {
   func selectSubscriptionPlan(planGroupId: Swift.String, customerId: Swift.String, planId: Swift.String) async throws -> MoneyHash.IntentDetails
   func getSubscriptionPlanGroups(limit: Swift.Int?, offset: Swift.Int?, currency: Swift.String?) async throws -> MoneyHash.SubscriptionPlanGroupsResponse
   func renderSubscriptionEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
+  func renderCreateBankAccountTokenEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, completionHandler: @escaping (Swift.Result<MoneyHash.BankAccountTokenizationStatus, any Swift.Error>) -> Swift.Void)
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
@@ -390,6 +406,7 @@ public enum IntentMethodType : Swift.String, Swift.Codable {
   case payoutMethod
   case savedCard
   case customerBalance
+  case savedBankAccount
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -450,6 +467,7 @@ public struct IntentMethods : Swift.Codable {
   public let expressMethods: [MoneyHash.ExpressMethod]?
   public let savedCards: [MoneyHash.SavedCard]?
   public let payoutMethods: [MoneyHash.PayoutMethod]?
+  public let savedBankAccounts: [MoneyHash.SavedBankAccount]?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -570,6 +588,12 @@ public enum CardFieldType : Swift.String, Swift.CodingKey, Swift.Codable {
 public protocol MHStatus {
   static var cancelled: Self { get }
 }
+public enum EmbedAction {
+  case openMoneyHashEmbed
+  case openUrl(urlToOpen: Foundation.URL)
+  case openSubscriptionEmbed
+  case openCreateBankAccountToken
+}
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class MHViewController<T> : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
@@ -655,6 +679,47 @@ public struct Transaction : Swift.Codable {
   public let providerTransactionFields: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum BankAccountStatus : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case pending
+  case active
+  case inactive
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [MoneyHash.BankAccountStatus]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [MoneyHash.BankAccountStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SavedBankAccount : Swift.Codable {
+  public let id: Swift.String?
+  public let bankIdentifier: Swift.String?
+  public let logo: Swift.String?
+  public let status: MoneyHash.BankAccountStatus?
+  public let accounts: [MoneyHash.Account]?
+  public let type: MoneyHash.IntentMethodType?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Account : Swift.Codable {
+  public let accountName: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MoneyHash.SavedBankAccount : MoneyHash.MoneyHashMethod {
+  public var title: Swift.String? {
+    get
+  }
+  public var isSelected: Swift.Bool? {
+    get
+  }
+  public var checkoutIcons: [Swift.String]? {
+    get
+  }
+  public typealias ID = Swift.String?
 }
 public enum IntentStatus : Swift.String, Swift.Codable {
   case processed
@@ -780,6 +845,9 @@ public struct AmountData : Swift.Codable {
 extension MoneyHash.SubscriptionStatus : Swift.Equatable {}
 extension MoneyHash.SubscriptionStatus : Swift.Hashable {}
 extension MoneyHash.SubscriptionStatus : Swift.RawRepresentable {}
+extension MoneyHash.BankAccountTokenizationStatus : Swift.Equatable {}
+extension MoneyHash.BankAccountTokenizationStatus : Swift.Hashable {}
+extension MoneyHash.BankAccountTokenizationStatus : Swift.RawRepresentable {}
 extension MoneyHash.MHLocale : Swift.Equatable {}
 extension MoneyHash.MHLocale : Swift.Hashable {}
 extension MoneyHash.MHLocale : Swift.RawRepresentable {}
@@ -815,6 +883,9 @@ extension MoneyHash.LogLevel : Swift.Hashable {}
 extension MoneyHash.CollectibleBillingData : Swift.Equatable {}
 extension MoneyHash.CollectibleBillingData : Swift.Hashable {}
 extension MoneyHash.CollectibleBillingData : Swift.RawRepresentable {}
+extension MoneyHash.BankAccountStatus : Swift.Equatable {}
+extension MoneyHash.BankAccountStatus : Swift.Hashable {}
+extension MoneyHash.BankAccountStatus : Swift.RawRepresentable {}
 extension MoneyHash.IntentStatus : Swift.Equatable {}
 extension MoneyHash.IntentStatus : Swift.Hashable {}
 extension MoneyHash.IntentStatus : Swift.RawRepresentable {}
