@@ -98,6 +98,13 @@ public struct EmbedButtonViewStyle : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct CardFormState : Swift.Codable {
+  public let isValid: Swift.Bool
+  public let fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState]
+  public init(isValid: Swift.Bool, fieldsState: [MoneyHash.CardFieldType : MoneyHash.CardFieldState])
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public struct ApplePayData : Swift.Codable {
   public let countryCode: Swift.String?
   public let merchantId: Swift.String?
@@ -288,6 +295,16 @@ public protocol MoneyHashSDK {
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
   func isDeviceCompatible() -> Swift.Bool
+  func updateField(fieldType: MoneyHash.CardFieldType, currentValue: Swift.String) -> MoneyHash.CardFieldState
+  func isValidForm() -> MoneyHash.CardFormState
+  func collect(token: Swift.String?) async throws -> MoneyHash.VaultData?
+  func pay(intentId: Swift.String, cardData: MoneyHash.VaultData, saveCard: Swift.Bool, billingData: [Swift.String : Swift.String]?, shippingData: [Swift.String : Swift.String]?, installmentPlanData: MoneyHash.InstallmentPlanData?) async throws -> MoneyHash.IntentDetails
+  func createCardToken(cardIntentId: Swift.String, cardData: MoneyHash.VaultData) async throws -> MoneyHash.IntentStateDetails?
+  func setCrossplatformVersion(_ version: Swift.String)
+  func setCardFormConfiguration(_ configuration: MoneyHash.CardFormConfiguration)
+  func setApplePayConfiguration(_ applePayConfiguration: MoneyHash.ApplePayConfiguration)
+  func binLookup() async throws -> MoneyHash.LookupData
+  func binLookup(cardData: MoneyHash.VaultData) async throws -> MoneyHash.LookupData
   func setLocale(_ locale: MoneyHash.MHLocale)
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
   func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
@@ -798,6 +815,17 @@ public struct SubscriptionPlan : Swift.Codable {
   public let isLive: Swift.Bool?
   public let alreadySubscribed: Swift.Bool?
   public let created: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardFieldState : Swift.Codable {
+  public let isValid: Swift.Bool
+  public let errorMessage: Swift.String?
+  public let formattedValue: Swift.String
+  public let fieldType: MoneyHash.CardFieldType
+  public let cardBrand: MoneyHash.CardBrand?
+  public let length: Swift.Int?
+  public init(isValid: Swift.Bool, errorMessage: Swift.String?, formattedValue: Swift.String, fieldType: MoneyHash.CardFieldType, cardBrand: MoneyHash.CardBrand?, length: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
