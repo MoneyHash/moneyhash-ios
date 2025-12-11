@@ -4820,6 +4820,817 @@
       },
       {
         "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AutomaticReloadPaymentRequest",
+        "printedName": "AutomaticReloadPaymentRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentDescription",
+            "printedName": "paymentDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescriptionSSvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescriptionSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescriptionSSvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescriptionSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "automaticReloadBilling",
+            "printedName": "automaticReloadBilling",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentSummaryItem",
+                "printedName": "MoneyHash.AutomaticReloadPaymentSummaryItem",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV09automaticD7BillingAA0cdE11SummaryItemVvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV09automaticD7BillingAA0cdE11SummaryItemVvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutomaticReloadPaymentSummaryItem",
+                    "printedName": "MoneyHash.AutomaticReloadPaymentSummaryItem",
+                    "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV09automaticD7BillingAA0cdE11SummaryItemVvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV09automaticD7BillingAA0cdE11SummaryItemVvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingAgreement",
+            "printedName": "billingAgreement",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV16billingAgreementSSSgvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV16billingAgreementSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV16billingAgreementSSSgvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV16billingAgreementSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "managementURL",
+            "printedName": "managementURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV13managementURLSSvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV13managementURLSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV13managementURLSSvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV13managementURLSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenNotificationURL",
+            "printedName": "tokenNotificationURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV20tokenNotificationURLSSSgvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV20tokenNotificationURLSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV20tokenNotificationURLSSSgvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV20tokenNotificationURLSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentDescription:automaticReloadBilling:billingAgreement:managementURL:tokenNotificationURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentRequest",
+                "printedName": "MoneyHash.AutomaticReloadPaymentRequest",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentSummaryItem",
+                "printedName": "MoneyHash.AutomaticReloadPaymentSummaryItem",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescription09automaticD7Billing16billingAgreement13managementURL017tokenNotificationN0ACSS_AA0cdE11SummaryItemVSSSgSSAKtcfc",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV18paymentDescription09automaticD7Billing16billingAgreement13managementURL017tokenNotificationN0ACSS_AA0cdE11SummaryItemVSSSgSSAKtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "pkAutomaticReloadPaymentRequest",
+            "printedName": "pkAutomaticReloadPaymentRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKAutomaticReloadPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKAutomaticReloadPaymentRequest",
+                    "printedName": "PassKit.PKAutomaticReloadPaymentRequest",
+                    "usr": "c:objc(cs)PKAutomaticReloadPaymentRequest"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV02pkcdeF0So011PKAutomaticdeF0CSgvp",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV02pkcdeF0So011PKAutomaticdeF0CSgvp",
+            "moduleName": "MoneyHash",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PassKit.PKAutomaticReloadPaymentRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKAutomaticReloadPaymentRequest",
+                        "printedName": "PassKit.PKAutomaticReloadPaymentRequest",
+                        "usr": "c:objc(cs)PKAutomaticReloadPaymentRequest"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV02pkcdeF0So011PKAutomaticdeF0CSgvg",
+                "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV02pkcdeF0So011PKAutomaticdeF0CSgvg",
+                "moduleName": "MoneyHash",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentRequest",
+                "printedName": "MoneyHash.AutomaticReloadPaymentRequest",
+                "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV",
+        "mangledName": "$s9MoneyHash29AutomaticReloadPaymentRequestV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AutomaticReloadPaymentSummaryItem",
+        "printedName": "AutomaticReloadPaymentSummaryItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "label",
+            "printedName": "label",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV5labelSSvp",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV5labelSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV5labelSSvg",
+                "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV5labelSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV6amountSo9NSDecimalavp",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV6amountSo9NSDecimalavp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV6amountSo9NSDecimalavg",
+                "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV6amountSo9NSDecimalavg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thresholdAmount",
+            "printedName": "thresholdAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV15thresholdAmountSo9NSDecimalavp",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV15thresholdAmountSo9NSDecimalavp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV15thresholdAmountSo9NSDecimalavg",
+                "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV15thresholdAmountSo9NSDecimalavg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(label:amount:thresholdAmount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentSummaryItem",
+                "printedName": "MoneyHash.AutomaticReloadPaymentSummaryItem",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV5label6amount15thresholdAmountACSS_So9NSDecimalaAHtcfc",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV5label6amount15thresholdAmountACSS_So9NSDecimalaAHtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "pkAutomaticReloadPaymentSummaryItem",
+            "printedName": "pkAutomaticReloadPaymentSummaryItem",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKAutomaticReloadPaymentSummaryItem",
+                "printedName": "PassKit.PKAutomaticReloadPaymentSummaryItem",
+                "usr": "c:objc(cs)PKAutomaticReloadPaymentSummaryItem"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV02pkcdefG0So011PKAutomaticdefG0Cvp",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV02pkcdefG0So011PKAutomaticdefG0Cvp",
+            "moduleName": "MoneyHash",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKAutomaticReloadPaymentSummaryItem",
+                    "printedName": "PassKit.PKAutomaticReloadPaymentSummaryItem",
+                    "usr": "c:objc(cs)PKAutomaticReloadPaymentSummaryItem"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV02pkcdefG0So011PKAutomaticdefG0Cvg",
+                "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV02pkcdefG0So011PKAutomaticdefG0Cvg",
+                "moduleName": "MoneyHash",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AutomaticReloadPaymentSummaryItem",
+                "printedName": "MoneyHash.AutomaticReloadPaymentSummaryItem",
+                "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash33AutomaticReloadPaymentSummaryItemV",
+        "mangledName": "$s9MoneyHash33AutomaticReloadPaymentSummaryItemV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MoneyHashShared",
         "printedName": "MoneyHashShared",
         "declKind": "Import",
@@ -12262,6 +13073,131 @@
           },
           {
             "kind": "Function",
+            "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(depositAmount:merchantIdentifier:currencyCode:countryCode:supportedNetworks:merchantCapabilities:recurringPayment:automaticReload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.RecurringPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentRequest",
+                    "printedName": "MoneyHash.RecurringPaymentRequest",
+                    "usr": "s:9MoneyHash23RecurringPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.AutomaticReloadPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutomaticReloadPaymentRequest",
+                    "printedName": "MoneyHash.AutomaticReloadPaymentRequest",
+                    "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12Capabilities16recurringPayment15automaticReloadAA06NativefG0VSf_S3SSaySSGSgApA09RecurringS7RequestVSgAA09AutomaticusX0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12Capabilities16recurringPayment15automaticReloadAA06NativefG0VSf_S3SSaySSGSgApA09RecurringS7RequestVSgAA09AutomaticusX0VSgtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "Custom",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "isDeviceCompatible",
             "printedName": "isDeviceCompatible()",
             "children": [
@@ -12902,6 +13838,50 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenizeReceipt",
+            "printedName": "tokenizeReceipt(receipt:methodId:cardTokenIntentId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP15tokenizeReceipt7receipt8methodId015cardTokenIntentH0S2S_S2StYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP15tokenizeReceipt7receipt8methodId015cardTokenIntentH0S2S_S2StYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -13002,6 +13982,83 @@
           },
           {
             "kind": "Var",
+            "name": "cardHolderValidations",
+            "printedName": "cardHolderValidations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash21CardFormConfigurationC21cardHolderValidationsSDyS2SGvp",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC21cardHolderValidationsSDyS2SGvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash21CardFormConfigurationC21cardHolderValidationsSDyS2SGvg",
+                "mangledName": "$s9MoneyHash21CardFormConfigurationC21cardHolderValidationsSDyS2SGvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "enableCardNumberValidation",
             "printedName": "enableCardNumberValidation",
             "children": [
@@ -13052,7 +14109,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isCardHolderNameRequired:enableCardNumberValidation:)",
+            "printedName": "init(isCardHolderNameRequired:cardHolderValidations:enableCardNumberValidation:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13069,6 +14126,27 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -13076,8 +14154,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash21CardFormConfigurationC02isC18HolderNameRequired06enableC16NumberValidationACSb_Sbtcfc",
-            "mangledName": "$s9MoneyHash21CardFormConfigurationC02isC18HolderNameRequired06enableC16NumberValidationACSb_Sbtcfc",
+            "usr": "s:9MoneyHash21CardFormConfigurationC02isC18HolderNameRequired04cardG11Validations06enableC16NumberValidationACSb_SDyS2SGSbtcfc",
+            "mangledName": "$s9MoneyHash21CardFormConfigurationC02isC18HolderNameRequired04cardG11Validations06enableC16NumberValidationACSb_SDyS2SGSbtcfc",
             "moduleName": "MoneyHash",
             "declAttributes": [
               "AccessControl",
@@ -25241,6 +26319,139 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:requestMediaCapturePermissionFor:initiatedByFrame:type:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKSecurityOrigin",
+                "printedName": "WebKit.WKSecurityOrigin",
+                "usr": "c:objc(cs)WKSecurityOrigin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKFrameInfo",
+                "printedName": "WebKit.WKFrameInfo",
+                "usr": "c:objc(cs)WKFrameInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKMediaCaptureType",
+                "printedName": "WebKit.WKMediaCaptureType",
+                "usr": "c:@E@WKMediaCaptureType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKPermissionDecision) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKPermissionDecision",
+                    "printedName": "WebKit.WKPermissionDecision",
+                    "usr": "c:@E@WKPermissionDecision"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16MHViewControllerC7webView_32requestMediaCapturePermissionFor16initiatedByFrame4type15decisionHandlerySo05WKWebF0C_So16WKSecurityOriginCSo11WKFrameInfoCSo07WKMediaI4TypeVySo20WKPermissionDecisionVctF",
+            "mangledName": "$s9MoneyHash16MHViewControllerC7webView_32requestMediaCapturePermissionFor16initiatedByFrame4type15decisionHandlerySo05WKWebF0C_So16WKSecurityOriginCSo11WKFrameInfoCSo07WKMediaI4TypeVySo20WKPermissionDecisionVctF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "intro_iOS": "15.0",
+            "objc_name": "webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKFrameInfo",
+                "printedName": "WebKit.WKFrameInfo",
+                "usr": "c:objc(cs)WKFrameInfo"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash16MHViewControllerC7webView_34runJavaScriptAlertPanelWithMessage16initiatedByFrame17completionHandlerySo05WKWebF0C_SSSo11WKFrameInfoCyyctF",
+            "mangledName": "$s9MoneyHash16MHViewControllerC7webView_34runJavaScriptAlertPanelWithMessage16initiatedByFrame17completionHandlerySo05WKWebF0C_SSSo11WKFrameInfoCyyctF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "objc_name": "webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
@@ -26873,6 +28084,1981 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "MoneyHash"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecurringPaymentRequest",
+        "printedName": "RecurringPaymentRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentDescription",
+            "printedName": "paymentDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV18paymentDescriptionSSvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV18paymentDescriptionSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV18paymentDescriptionSSvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV18paymentDescriptionSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regularBilling",
+            "printedName": "regularBilling",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentSummaryItem",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV14regularBillingAA0cD11SummaryItemVvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV14regularBillingAA0cD11SummaryItemVvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentSummaryItem",
+                    "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                    "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV14regularBillingAA0cD11SummaryItemVvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV14regularBillingAA0cD11SummaryItemVvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trialBilling",
+            "printedName": "trialBilling",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentSummaryItem",
+                    "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                    "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV12trialBillingAA0cD11SummaryItemVSgvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV12trialBillingAA0cD11SummaryItemVSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.RecurringPaymentSummaryItem?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecurringPaymentSummaryItem",
+                        "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                        "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV12trialBillingAA0cD11SummaryItemVSgvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV12trialBillingAA0cD11SummaryItemVSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingAgreement",
+            "printedName": "billingAgreement",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV16billingAgreementSSSgvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV16billingAgreementSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV16billingAgreementSSSgvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV16billingAgreementSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "managementURL",
+            "printedName": "managementURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV13managementURLSSvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV13managementURLSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV13managementURLSSvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV13managementURLSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokenNotificationURL",
+            "printedName": "tokenNotificationURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV20tokenNotificationURLSSSgvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV20tokenNotificationURLSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV20tokenNotificationURLSSSgvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV20tokenNotificationURLSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentDescription:regularBilling:trialBilling:billingAgreement:managementURL:tokenNotificationURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentRequest",
+                "printedName": "MoneyHash.RecurringPaymentRequest",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentSummaryItem",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentSummaryItem",
+                    "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                    "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV18paymentDescription14regularBilling05trialI016billingAgreement13managementURL017tokenNotificationN0ACSS_AA0cD11SummaryItemVAKSgSSSgSSAMtcfc",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV18paymentDescription14regularBilling05trialI016billingAgreement13managementURL017tokenNotificationN0ACSS_AA0cD11SummaryItemVAKSgSSSgSSAMtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "pkRecurringPaymentRequest",
+            "printedName": "pkRecurringPaymentRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PassKit.PKRecurringPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKRecurringPaymentRequest",
+                    "printedName": "PassKit.PKRecurringPaymentRequest",
+                    "usr": "c:objc(cs)PKRecurringPaymentRequest"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV02pkcdE0So011PKRecurringdE0CSgvp",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV02pkcdE0So011PKRecurringdE0CSgvp",
+            "moduleName": "MoneyHash",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PassKit.PKRecurringPaymentRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PKRecurringPaymentRequest",
+                        "printedName": "PassKit.PKRecurringPaymentRequest",
+                        "usr": "c:objc(cs)PKRecurringPaymentRequest"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV02pkcdE0So011PKRecurringdE0CSgvg",
+                "mangledName": "$s9MoneyHash23RecurringPaymentRequestV02pkcdE0So011PKRecurringdE0CSgvg",
+                "moduleName": "MoneyHash",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentRequest",
+                "printedName": "MoneyHash.RecurringPaymentRequest",
+                "usr": "s:9MoneyHash23RecurringPaymentRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash23RecurringPaymentRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash23RecurringPaymentRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash23RecurringPaymentRequestV",
+        "mangledName": "$s9MoneyHash23RecurringPaymentRequestV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecurringPaymentSummaryItem",
+        "printedName": "RecurringPaymentSummaryItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "label",
+            "printedName": "label",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV5labelSSvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV5labelSSvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV5labelSSvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV5labelSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Decimal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV6amountSo9NSDecimalaSgvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV6amountSo9NSDecimalaSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Decimal?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Decimal",
+                        "printedName": "Foundation.Decimal",
+                        "usr": "c:@SA@NSDecimal"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV6amountSo9NSDecimalaSgvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV6amountSo9NSDecimalaSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startDate",
+            "printedName": "startDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV9startDate10Foundation0H0VSgvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV9startDate10Foundation0H0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV9startDate10Foundation0H0VSgvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV9startDate10Foundation0H0VSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endDate",
+            "printedName": "endDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV7endDate10Foundation0H0VSgvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV7endDate10Foundation0H0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV7endDate10Foundation0H0VSgvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV7endDate10Foundation0H0VSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intervalCount",
+            "printedName": "intervalCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV13intervalCountSiSgvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV13intervalCountSiSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV13intervalCountSiSgvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV13intervalCountSiSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intervalUnit",
+            "printedName": "intervalUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.IntervalUnit?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV12intervalUnitAA08IntervalH0OSgvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV12intervalUnitAA08IntervalH0OSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.IntervalUnit?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV12intervalUnitAA08IntervalH0OSgvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV12intervalUnitAA08IntervalH0OSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(label:amount:startDate:endDate:intervalCount:intervalUnit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentSummaryItem",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Decimal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.IntervalUnit?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV5label6amount9startDate03endJ013intervalCount0L4UnitACSS_So9NSDecimalaSg10Foundation0J0VSgAPSiSgAA08IntervalN0OSgtcfc",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV5label6amount9startDate03endJ013intervalCount0L4UnitACSS_So9NSDecimalaSg10Foundation0J0VSgAPSiSgAA08IntervalN0OSgtcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "pkRecurringPaymentSummaryItem",
+            "printedName": "pkRecurringPaymentSummaryItem",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PKRecurringPaymentSummaryItem",
+                "printedName": "PassKit.PKRecurringPaymentSummaryItem",
+                "usr": "c:objc(cs)PKRecurringPaymentSummaryItem"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV02pkcdeF0So011PKRecurringdeF0Cvp",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV02pkcdeF0So011PKRecurringdeF0Cvp",
+            "moduleName": "MoneyHash",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKRecurringPaymentSummaryItem",
+                    "printedName": "PassKit.PKRecurringPaymentSummaryItem",
+                    "usr": "c:objc(cs)PKRecurringPaymentSummaryItem"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV02pkcdeF0So011PKRecurringdeF0Cvg",
+                "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV02pkcdeF0So011PKRecurringdeF0Cvg",
+                "moduleName": "MoneyHash",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecurringPaymentSummaryItem",
+                "printedName": "MoneyHash.RecurringPaymentSummaryItem",
+                "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash27RecurringPaymentSummaryItemV",
+        "mangledName": "$s9MoneyHash27RecurringPaymentSummaryItemV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IntervalUnit",
+        "printedName": "IntervalUnit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "minute",
+            "printedName": "minute",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntervalUnit.Type) -> MoneyHash.IntervalUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntervalUnit.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12IntervalUnitO6minuteyA2CmF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO6minuteyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "hour",
+            "printedName": "hour",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntervalUnit.Type) -> MoneyHash.IntervalUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntervalUnit.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12IntervalUnitO4houryA2CmF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO4houryA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "day",
+            "printedName": "day",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntervalUnit.Type) -> MoneyHash.IntervalUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntervalUnit.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12IntervalUnitO3dayyA2CmF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO3dayyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "month",
+            "printedName": "month",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntervalUnit.Type) -> MoneyHash.IntervalUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntervalUnit.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12IntervalUnitO5monthyA2CmF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO5monthyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "year",
+            "printedName": "year",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.IntervalUnit.Type) -> MoneyHash.IntervalUnit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.IntervalUnit.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash12IntervalUnitO4yearyA2CmF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO4yearyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IntervalUnit",
+                "printedName": "MoneyHash.IntervalUnit",
+                "usr": "s:9MoneyHash12IntervalUnitO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12IntervalUnitO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash12IntervalUnitO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash12IntervalUnitO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash12IntervalUnitO6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "nsCalendarUnit",
+            "printedName": "nsCalendarUnit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Unit",
+                "printedName": "Foundation.NSCalendar.Unit",
+                "usr": "c:@E@NSCalendarUnit"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12IntervalUnitO010nsCalendarD0So010NSCalendarD0Vvp",
+            "mangledName": "$s9MoneyHash12IntervalUnitO010nsCalendarD0So010NSCalendarD0Vvp",
+            "moduleName": "MoneyHash",
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Unit",
+                    "printedName": "Foundation.NSCalendar.Unit",
+                    "usr": "c:@E@NSCalendarUnit"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12IntervalUnitO010nsCalendarD0So010NSCalendarD0Vvg",
+                "mangledName": "$s9MoneyHash12IntervalUnitO010nsCalendarD0So010NSCalendarD0Vvg",
+                "moduleName": "MoneyHash",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.IntervalUnit?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash12IntervalUnitO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash12IntervalUnitO8rawValueACSgSS_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12IntervalUnitO8rawValueSSvp",
+            "mangledName": "$s9MoneyHash12IntervalUnitO8rawValueSSvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12IntervalUnitO8rawValueSSvg",
+                "mangledName": "$s9MoneyHash12IntervalUnitO8rawValueSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MoneyHash.IntervalUnit]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntervalUnit",
+                    "printedName": "MoneyHash.IntervalUnit",
+                    "usr": "s:9MoneyHash12IntervalUnitO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12IntervalUnitO8allCasesSayACGvpZ",
+            "mangledName": "$s9MoneyHash12IntervalUnitO8allCasesSayACGvpZ",
+            "moduleName": "MoneyHash",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHash.IntervalUnit]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12IntervalUnitO8allCasesSayACGvgZ",
+                "mangledName": "$s9MoneyHash12IntervalUnitO8allCasesSayACGvgZ",
+                "moduleName": "MoneyHash",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MoneyHash12IntervalUnitO",
+        "mangledName": "$s9MoneyHash12IntervalUnitO",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MoneyHash.IntervalUnit]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntervalUnit",
+                        "printedName": "MoneyHash.IntervalUnit",
+                        "usr": "s:9MoneyHash12IntervalUnitO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentSummaryItemType",
+        "printedName": "PaymentSummaryItemType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "final",
+            "printedName": "final",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.PaymentSummaryItemType.Type) -> MoneyHash.PaymentSummaryItemType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSummaryItemType",
+                    "printedName": "MoneyHash.PaymentSummaryItemType",
+                    "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.PaymentSummaryItemType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSummaryItemType",
+                        "printedName": "MoneyHash.PaymentSummaryItemType",
+                        "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO5finalyA2CmF",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO5finalyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
+            "name": "pending",
+            "printedName": "pending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.PaymentSummaryItemType.Type) -> MoneyHash.PaymentSummaryItemType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSummaryItemType",
+                    "printedName": "MoneyHash.PaymentSummaryItemType",
+                    "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.PaymentSummaryItemType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentSummaryItemType",
+                        "printedName": "MoneyHash.PaymentSummaryItemType",
+                        "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO7pendingyA2CmF",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO7pendingyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSummaryItemType",
+                "printedName": "MoneyHash.PaymentSummaryItemType",
+                "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.PaymentSummaryItemType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentSummaryItemType",
+                    "printedName": "MoneyHash.PaymentSummaryItemType",
+                    "usr": "s:9MoneyHash22PaymentSummaryItemTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash22PaymentSummaryItemTypeO8rawValueSSvp",
+            "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO8rawValueSSvp",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash22PaymentSummaryItemTypeO8rawValueSSvg",
+                "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO8rawValueSSvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9MoneyHash22PaymentSummaryItemTypeO",
+        "mangledName": "$s9MoneyHash22PaymentSummaryItemTypeO",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           },
           {
             "kind": "Conformance",
@@ -34952,6 +38138,48 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1795,
+      "length": 21,
+      "value": "\"payment_description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 26,
+      "value": "\"automatic_reload_billing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1914,
+      "length": 19,
+      "value": "\"billing_agreement\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1963,
+      "length": 16,
+      "value": "\"management_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2016,
+      "length": 24,
+      "value": "\"token_notification_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/AutomaticReloadPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3926,
+      "length": 18,
+      "value": "\"threshold_amount\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Intent\/Discount.swift",
       "kind": "StringLiteral",
       "offset": 334,
@@ -35255,14 +38483,21 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/CardFormConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1356,
+      "offset": 2069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/CardFormConfiguration.swift",
+      "kind": "Dictionary",
+      "offset": 2126,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/CardFormConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1398,
+      "offset": 2174,
       "length": 4,
       "value": "true"
     },
@@ -35745,70 +38980,126 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
+      "offset": 1092,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "Array",
       "offset": 1155,
-      "length": 5,
-      "value": "false"
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1357,
-      "length": 5,
-      "value": "false"
+      "offset": 1194,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1208,
+      "length": 29,
+      "value": "\"allowFileAccessFromFileURLs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1286,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1632,
+      "offset": 1344,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1464,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1666,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 137,
+      "value": "\"Mozilla\/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/17.0 Mobile\/15E148 Safari\/604.1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2011,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1849,
+      "offset": 2420,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1926,
+      "offset": 2497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2101,
+      "offset": 2672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2751,
+      "offset": 3109,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3358,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12685,
+      "offset": 14632,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12712,
+      "offset": 14659,
       "length": 1,
       "value": "0"
     },
@@ -35832,6 +39123,76 @@
       "offset": 1382,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1884,
+      "length": 21,
+      "value": "\"payment_description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1936,
+      "length": 17,
+      "value": "\"regular_billing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1982,
+      "length": 15,
+      "value": "\"trial_billing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2030,
+      "length": 19,
+      "value": "\"billing_agreement\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2079,
+      "length": 16,
+      "value": "\"management_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2132,
+      "length": 24,
+      "value": "\"token_notification_url\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 4406,
+      "length": 12,
+      "value": "\"start_date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 4442,
+      "length": 10,
+      "value": "\"end_date\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 4482,
+      "length": 16,
+      "value": "\"interval_count\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/RecurringPaymentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 4527,
+      "length": 15,
+      "value": "\"interval_unit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/Transaction.swift",
@@ -35956,55 +39317,55 @@
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 11,
-      "value": "\"4.0.9-dev\""
+      "length": 8,
+      "value": "\"4.0.11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 140,
+      "offset": 137,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 177,
+      "offset": 174,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 216,
+      "offset": 213,
       "length": 6,
       "value": "\"lang\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 254,
+      "offset": 251,
       "length": 7,
       "value": "\"agent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 295,
+      "offset": 292,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 341,
       "length": 20,
       "value": "\"subscription-plan\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 410,
       "length": 14,
       "value": "\"bankaccount\/\""
     },

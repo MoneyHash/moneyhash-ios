@@ -122,6 +122,32 @@ public class CardFormBuilder {
   public func build() -> MoneyHash.CardForm
   @objc deinit
 }
+public struct AutomaticReloadPaymentRequest : Swift.Codable {
+  public let paymentDescription: Swift.String
+  public let automaticReloadBilling: MoneyHash.AutomaticReloadPaymentSummaryItem
+  public let billingAgreement: Swift.String?
+  public let managementURL: Swift.String
+  public let tokenNotificationURL: Swift.String?
+  public init(paymentDescription: Swift.String, automaticReloadBilling: MoneyHash.AutomaticReloadPaymentSummaryItem, billingAgreement: Swift.String? = nil, managementURL: Swift.String, tokenNotificationURL: Swift.String? = nil)
+  @available(iOS 16.0, *)
+  public var pkAutomaticReloadPaymentRequest: PassKit.PKAutomaticReloadPaymentRequest? {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AutomaticReloadPaymentSummaryItem : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let thresholdAmount: Foundation.Decimal
+  public init(label: Swift.String, amount: Foundation.Decimal, thresholdAmount: Foundation.Decimal)
+  @available(iOS 16.0, *)
+  public var pkAutomaticReloadPaymentSummaryItem: PassKit.PKAutomaticReloadPaymentSummaryItem {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum DiscountType : Swift.String, Swift.Codable {
   case amount
   case percentage
@@ -287,6 +313,8 @@ public protocol MoneyHashSDK {
   func submitPaymentReceipt(intentId: Swift.String, nativePayReceipt: MoneyHash.NativePayReceipt) async throws -> MoneyHash.IntentDetails
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, applePayData: MoneyHash.ApplePayData) async throws -> MoneyHash.NativePayReceipt
   @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?) async throws -> MoneyHash.NativePayReceipt
+  @available(iOS 16.0, *)
+  @_Concurrency.MainActor func generateApplePayReceipt(depositAmount: Swift.Float, merchantIdentifier: Swift.String, currencyCode: Swift.String, countryCode: Swift.String, supportedNetworks: [Swift.String]?, merchantCapabilities: [Swift.String]?, recurringPayment: MoneyHash.RecurringPaymentRequest?, automaticReload: MoneyHash.AutomaticReloadPaymentRequest?) async throws -> MoneyHash.NativePayReceipt
   func isDeviceCompatible() -> Swift.Bool
   func setLocale(_ locale: MoneyHash.MHLocale)
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
@@ -300,11 +328,13 @@ public protocol MoneyHashSDK {
   func getSubscriptionPlanGroups(limit: Swift.Int?, offset: Swift.Int?, currency: Swift.String?) async throws -> MoneyHash.SubscriptionPlanGroupsResponse
   func renderSubscriptionEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, embedStyle: MoneyHash.EmbedStyle?, completionHandler: @escaping (Swift.Result<MoneyHash.IntentDetails, any Swift.Error>) -> Swift.Void)
   func renderCreateBankAccountTokenEmbed(on viewController: UIKit.UIViewController, intentId: Swift.String, completionHandler: @escaping (Swift.Result<MoneyHash.BankAccountTokenizationStatus, any Swift.Error>) -> Swift.Void)
+  func tokenizeReceipt(receipt: Swift.String, methodId: Swift.String, cardTokenIntentId: Swift.String) async throws -> Swift.String
 }
 public class CardFormConfiguration : Swift.Codable {
   final public let isCardHolderNameRequired: Swift.Bool
+  final public let cardHolderValidations: [Swift.String : Swift.String]
   final public let enableCardNumberValidation: Swift.Bool
-  public init(isCardHolderNameRequired: Swift.Bool = false, enableCardNumberValidation: Swift.Bool = true)
+  public init(isCardHolderNameRequired: Swift.Bool = false, cardHolderValidations: [Swift.String : Swift.String] = [:], enableCardNumberValidation: Swift.Bool = true)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -604,6 +634,9 @@ public enum EmbedAction {
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
 }
 public enum LogLevel {
   case verbose
@@ -641,6 +674,69 @@ public struct SubscriptionInfo : Swift.Codable {
   public let id: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecurringPaymentRequest : Swift.Codable {
+  public let paymentDescription: Swift.String
+  public let regularBilling: MoneyHash.RecurringPaymentSummaryItem
+  public let trialBilling: MoneyHash.RecurringPaymentSummaryItem?
+  public let billingAgreement: Swift.String?
+  public let managementURL: Swift.String
+  public let tokenNotificationURL: Swift.String?
+  public init(paymentDescription: Swift.String, regularBilling: MoneyHash.RecurringPaymentSummaryItem, trialBilling: MoneyHash.RecurringPaymentSummaryItem? = nil, billingAgreement: Swift.String? = nil, managementURL: Swift.String, tokenNotificationURL: Swift.String? = nil)
+  @available(iOS 16.0, *)
+  public var pkRecurringPaymentRequest: PassKit.PKRecurringPaymentRequest? {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecurringPaymentSummaryItem : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal?
+  public let startDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public let intervalCount: Swift.Int?
+  public let intervalUnit: MoneyHash.IntervalUnit?
+  public init(label: Swift.String, amount: Foundation.Decimal? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, intervalCount: Swift.Int? = nil, intervalUnit: MoneyHash.IntervalUnit? = nil)
+  @available(iOS 16.0, *)
+  public var pkRecurringPaymentSummaryItem: PassKit.PKRecurringPaymentSummaryItem {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum IntervalUnit : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case minute
+  case hour
+  case day
+  case month
+  case year
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @available(iOS 16.0, *)
+  public var nsCalendarUnit: Foundation.NSCalendar.Unit {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [MoneyHash.IntervalUnit]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [MoneyHash.IntervalUnit] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PaymentSummaryItemType : Swift.String, Swift.Codable {
+  case final
+  case pending
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct CustomerBalance : Swift.Codable {
   public let id: Swift.String?
@@ -880,6 +976,12 @@ extension MoneyHash.CardFieldType : Swift.Hashable {}
 extension MoneyHash.CardFieldType : Swift.RawRepresentable {}
 extension MoneyHash.LogLevel : Swift.Equatable {}
 extension MoneyHash.LogLevel : Swift.Hashable {}
+extension MoneyHash.IntervalUnit : Swift.Equatable {}
+extension MoneyHash.IntervalUnit : Swift.Hashable {}
+extension MoneyHash.IntervalUnit : Swift.RawRepresentable {}
+extension MoneyHash.PaymentSummaryItemType : Swift.Equatable {}
+extension MoneyHash.PaymentSummaryItemType : Swift.Hashable {}
+extension MoneyHash.PaymentSummaryItemType : Swift.RawRepresentable {}
 extension MoneyHash.CollectibleBillingData : Swift.Equatable {}
 extension MoneyHash.CollectibleBillingData : Swift.Hashable {}
 extension MoneyHash.CollectibleBillingData : Swift.RawRepresentable {}
