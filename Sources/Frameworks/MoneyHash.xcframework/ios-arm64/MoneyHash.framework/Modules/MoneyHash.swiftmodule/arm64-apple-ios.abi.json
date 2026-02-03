@@ -6840,6 +6840,43 @@
           },
           {
             "kind": "Var",
+            "name": "amex",
+            "printedName": "amex",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.Brand.Type) -> MoneyHash.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHash.Brand",
+                    "usr": "s:9MoneyHash5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHash.Brand",
+                        "usr": "s:9MoneyHash5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash5BrandO4amexyA2CmF",
+            "mangledName": "$s9MoneyHash5BrandO4amexyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
             "name": "unknown",
             "printedName": "unknown",
             "children": [
@@ -39318,7 +39355,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.12\""
+      "value": "\"4.0.13\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
