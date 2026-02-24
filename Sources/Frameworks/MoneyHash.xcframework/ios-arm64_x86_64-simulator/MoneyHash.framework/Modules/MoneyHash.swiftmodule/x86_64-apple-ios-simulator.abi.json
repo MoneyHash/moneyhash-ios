@@ -8886,83 +8886,6 @@
           },
           {
             "kind": "Var",
-            "name": "paymentMethods",
-            "printedName": "paymentMethods",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9MoneyHash13CardTokenDataV14paymentMethodsSaySSGSgvp",
-            "mangledName": "$s9MoneyHash13CardTokenDataV14paymentMethodsSaySSGSgvp",
-            "moduleName": "MoneyHash",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9MoneyHash13CardTokenDataV14paymentMethodsSaySSGSgvg",
-                "mangledName": "$s9MoneyHash13CardTokenDataV14paymentMethodsSaySSGSgvg",
-                "moduleName": "MoneyHash",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "requiresCvv",
             "printedName": "requiresCvv",
             "children": [
@@ -38338,42 +38261,35 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5698,
+      "offset": 5603,
       "length": 18,
       "value": "\"card_holder_name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5765,
+      "offset": 5670,
       "length": 14,
       "value": "\"expiry_month\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5806,
+      "offset": 5711,
       "length": 13,
       "value": "\"expiry_year\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5861,
+      "offset": 5766,
       "length": 8,
       "value": "\"last_4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
       "kind": "StringLiteral",
-      "offset": 5918,
-      "length": 17,
-      "value": "\"payment_methods\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/State.swift",
-      "kind": "StringLiteral",
-      "offset": 5963,
+      "offset": 5820,
       "length": 14,
       "value": "\"requires_cvv\""
     },
@@ -39355,7 +39271,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.13\""
+      "value": "\"4.0.15\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

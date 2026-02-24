@@ -232,7 +232,6 @@ public struct CardTokenData : Swift.Codable {
   public let issuer: Swift.String?
   public let last4: Swift.String?
   public let logo: Swift.String?
-  public let paymentMethods: [Swift.String]?
   public let requiresCvv: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
