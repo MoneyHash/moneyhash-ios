@@ -36414,7 +36414,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardFormCollector:type:placeholder:)",
+            "printedName": "init(cardFormCollector:type:maskCvv:placeholder:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36442,6 +36442,13 @@
                 "usr": "s:9MoneyHash13CardFieldTypeO"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "() -> τ_0_0",
@@ -36460,8 +36467,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9MoneyHash15SecureTextFieldV17cardFormCollector4type11placeholderACyxGAA04CardG0C_AA0kE4TypeOxyctcfc",
-            "mangledName": "$s9MoneyHash15SecureTextFieldV17cardFormCollector4type11placeholderACyxGAA04CardG0C_AA0kE4TypeOxyctcfc",
+            "usr": "s:9MoneyHash15SecureTextFieldV17cardFormCollector4type7maskCvv11placeholderACyxGAA04CardG0C_AA0mE4TypeOSbxyctcfc",
+            "mangledName": "$s9MoneyHash15SecureTextFieldV17cardFormCollector4type7maskCvv11placeholderACyxGAA04CardG0C_AA0mE4TypeOSbxyctcfc",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -38947,98 +38954,91 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1194,
+      "offset": 1205,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1387,
       "length": 29,
       "value": "\"allowFileAccessFromFileURLs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1286,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1344,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1464,
+      "offset": 1543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1666,
+      "offset": 1745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1787,
-      "length": 137,
-      "value": "\"Mozilla\/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/17.0 Mobile\/15E148 Safari\/604.1\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2011,
+      "offset": 1829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2203,
+      "offset": 2021,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2420,
+      "offset": 2238,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2497,
+      "offset": 2315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2672,
+      "offset": 2490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3109,
+      "offset": 2927,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Base\/MHViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3358,
+      "offset": 3176,
       "length": 5,
       "value": "false"
     },
@@ -39271,7 +39271,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.15\""
+      "value": "\"4.0.19\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
@@ -39496,6 +39496,13 @@
       "offset": 466,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1278,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/ProgressView\/ProgressView.swift",

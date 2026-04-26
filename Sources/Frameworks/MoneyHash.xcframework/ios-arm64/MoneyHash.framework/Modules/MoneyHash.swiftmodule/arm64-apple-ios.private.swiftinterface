@@ -899,7 +899,7 @@ public struct SubscriptionPlan : Swift.Codable {
 }
 @available(iOS 15.0, *)
 @_Concurrency.MainActor @preconcurrency public struct SecureTextField<Content> : SwiftUICore.View where Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(cardFormCollector: MoneyHash.CardForm, type: MoneyHash.CardFieldType, maskCvv: Swift.Bool = false, @SwiftUICore.ViewBuilder placeholder: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
