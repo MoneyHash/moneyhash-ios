@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		a+x+6OE1oaG/+FZzReNfHshhQqo=
+		mslUX/ZcbGI+TUjZ5v3lhkznYYo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Po5CZ6TdEqbYx5i/rpdIhjBLWLk=
+		nPHskdpQUeztMTgeW+/CDv3OnBo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		tJxRetgXppkJMtWlsn1pJxuGD4c=
+		IsGT0kb8LIkKufo3JydYT5/01Ao=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JGadc/G9TiggN1gYIBwnrBQLBfw=
+		K2REnWmcnSjU8V+XLUQmMGgcjpo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		04E5Uk0rhnaSrz5gXWy7afS88so=
+		icjzTh93QzuyNvc9vzhSsrN9EQI=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Oj3IwtUZCBtE255ICRxEdBsHH10=
+		SFYr9ae7InCaYj2tX5Whr1xPt2k=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		04E5Uk0rhnaSrz5gXWy7afS88so=
+		icjzTh93QzuyNvc9vzhSsrN9EQI=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fG7W61bqnicvO9IVwtNIQzPSphA=
+		7HHKfMY/p7rtW+OEXOWroUP45Bc=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JGadc/G9TiggN1gYIBwnrBQLBfw=
+		K2REnWmcnSjU8V+XLUQmMGgcjpo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aNUyzzgwOFUWLYEJxNMa76MeAAs=
+		yGZDMUjQjlvy2ZYM+AEvEGMmbPo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yfCKJ2NdsJ/JdRYgaeY4Mv+9Yng=
+		tBKSJDBMJC7GHEnTTB6rQaODY5Y=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aNUyzzgwOFUWLYEJxNMa76MeAAs=
+		yGZDMUjQjlvy2ZYM+AEvEGMmbPo=
 		</data>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ddcI2hm7yl4T7IrCzfuXjYQrbF0=
+		BA1jqgrfpZz/UpvsO5fBKPed4Ak=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,84 +89,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R5QnnabV+PqLXGty971qWQEzuBw8Vb/g4m1wnYgQGl4=
+			PeKpC//YQZRlUWgLUVuxTV23EXloESwgmyxahYmLqiE=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YqkcAXYJtcMd/d1qBDkLctY6kuCsssxdWHcBIf/Yfe4=
+			JrETJtsZmDityGERKS2/TrY7gNGYRP5ldimAeZ2wtDM=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMN5QODUoYlB5hRHxmXKObAAQcSBj9jsbbP+3LdMcWY=
+			Xnj093kb3bC2BPZJU5UatdeBzN4/0aDKJHpgbAixKJI=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCH/UZ6JREBxEgtrZ1hArESaFj2CTbsXVSx6e9wwITg=
+			AeTfpXLLgmkUM8saHYSF1VmCNO5HUysc1UionFLtqVM=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkiklZ0JaLpyg7kyW/2hPUWkcF8HQHIz/FJLsBWWM5Y=
+			5yi60obe0t907SVksgWeTjhyNRJsWVDIfrLDZq2D8Y4=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCH/UZ6JREBxEgtrZ1hArESaFj2CTbsXVSx6e9wwITg=
+			AeTfpXLLgmkUM8saHYSF1VmCNO5HUysc1UionFLtqVM=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IlnSDPYMwEe5Go3kDGO9JN/dvNfx/FTlOr6qwromSjU=
+			DHJqnf8qlgVo8gPngLBFPk4ZaK9iXmm41lSnv2QUxKc=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMN5QODUoYlB5hRHxmXKObAAQcSBj9jsbbP+3LdMcWY=
+			Xnj093kb3bC2BPZJU5UatdeBzN4/0aDKJHpgbAixKJI=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NnoUi17/uvATq93xC9Mt/71ODVYrhTUg+kVGQgUKLIU=
+			2eOagcTx+k5diK38vMLyeSrmL0K5dBT7lzWq/eUN82k=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pu75nd3jrU4LOmHsf0K+9whi1/YMDMzgD9aQM5QwMDg=
+			pFNhNaleA5dLV0fjE63V8Bm7GaOyxXndHYvrPNUYv9E=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NnoUi17/uvATq93xC9Mt/71ODVYrhTUg+kVGQgUKLIU=
+			2eOagcTx+k5diK38vMLyeSrmL0K5dBT7lzWq/eUN82k=
 			</data>
 		</dict>
 		<key>Modules/MoneyHash.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGaCMGzGqKOftufmAtSKjyGnmlV4VKRzoU1rg99b24A=
+			p23Rfnbuwue2vXgZX3LQxDo5m5hT3J2Kxdv/UsN7iWg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
