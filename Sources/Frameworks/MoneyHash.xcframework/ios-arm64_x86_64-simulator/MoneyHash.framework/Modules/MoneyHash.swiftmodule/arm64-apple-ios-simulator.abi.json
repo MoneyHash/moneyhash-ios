@@ -7610,6 +7610,43 @@
           },
           {
             "kind": "Var",
+            "name": "troy",
+            "printedName": "troy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.Brand.Type) -> MoneyHash.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHash.Brand",
+                    "usr": "s:9MoneyHash5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHash.Brand",
+                        "usr": "s:9MoneyHash5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash5BrandO4troyyA2CmF",
+            "mangledName": "$s9MoneyHash5BrandO4troyyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
             "name": "amex",
             "printedName": "amex",
             "children": [
@@ -40718,24 +40755,10 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 676,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 457,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/SecureTextField\/UIFields\/SecureTextFieldViewModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 969,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ProductItem.swift",
@@ -40922,14 +40945,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/IntentUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 11246,
+      "offset": 11167,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/IntentUseCase.swift",
       "kind": "IntegerLiteral",
-      "offset": 11273,
+      "offset": 11194,
       "length": 1,
       "value": "0"
     },
@@ -41407,7 +41430,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.21\""
+      "value": "\"4.0.22\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",

@@ -189,6 +189,7 @@ public enum Brand : Swift.String, Swift.Codable {
   case visa
   case mastercard
   case mada
+  case troy
   case amex
   case unknown
   public init?(rawValue: Swift.String)
