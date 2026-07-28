@@ -303,6 +303,7 @@ public struct IntentDetails : Swift.Codable {
   public let lastUsedMethod: MoneyHash.LastUsedMethod?
   public let paymentStatus: MoneyHash.PaymentStatus?
   public let subscriptionInfo: MoneyHash.SubscriptionInfo?
+  public let moneyHashIntentSecret: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -328,6 +329,7 @@ public protocol MoneyHashSDK {
   func updateFees(intentId: Swift.String, fees: [MoneyHash.FeeItem]) async throws -> MoneyHash.FeesData?
   func updateDiscount(intentId: Swift.String, discount: MoneyHash.DiscountItem) async throws -> MoneyHash.DiscountData?
   func setPublicKey(_ key: Swift.String)
+  func setIntentSecret(_ secret: Swift.String)
   func selectInstallmentPlan(intentId: Swift.String, installmentPlanData: MoneyHash.InstallmentPlanData) async throws -> MoneyHash.IntentDetails
   func getInstallmentPlans(amount: Swift.Double, currency: Swift.String, first6Digits: Swift.String?) async throws -> [MoneyHash.InstallmentPlan]
   func getApplePayBinLookup(receipt: MoneyHash.NativePayReceipt, methodID: Swift.String, flowId: Swift.String?) async throws -> MoneyHash.LookupData

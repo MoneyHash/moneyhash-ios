@@ -12773,6 +12773,67 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "moneyHashIntentSecret",
+            "printedName": "moneyHashIntentSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13IntentDetailsV05moneybC6SecretSSSgvp",
+            "mangledName": "$s9MoneyHash13IntentDetailsV05moneybC6SecretSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13IntentDetailsV05moneybC6SecretSSSgvg",
+                "mangledName": "$s9MoneyHash13IntentDetailsV05moneybC6SecretSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
@@ -14138,6 +14199,36 @@
             "declKind": "Func",
             "usr": "s:9MoneyHash0aB3SDKP12setPublicKeyyySSF",
             "mangledName": "$s9MoneyHash0aB3SDKP12setPublicKeyyySSF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIntentSecret",
+            "printedName": "setIntentSecret(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP15setIntentSecretyySSF",
+            "mangledName": "$s9MoneyHash0aB3SDKP15setIntentSecretyySSF",
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
@@ -40525,44 +40616,51 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6232,
+      "offset": 6680,
       "length": 17,
       "value": "\"selected_method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6272,
+      "offset": 6720,
       "length": 15,
       "value": "\"walletBalance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6336,
+      "offset": 6784,
       "length": 14,
       "value": "\"productItems\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6441,
+      "offset": 6889,
       "length": 18,
       "value": "\"last_used_method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6489,
+      "offset": 6937,
       "length": 16,
       "value": "\"payment_status\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
       "kind": "StringLiteral",
-      "offset": 6538,
+      "offset": 6986,
       "length": 19,
       "value": "\"subscription_info\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/IntentDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7043,
+      "length": 15,
+      "value": "\"intent_secret\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/CardFormConfiguration.swift",
@@ -41155,14 +41253,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14632,
+      "offset": 14745,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 14659,
+      "offset": 14772,
       "length": 1,
       "value": "0"
     },
@@ -41430,7 +41528,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 8,
-      "value": "\"4.0.22\""
+      "value": "\"4.0.23\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
