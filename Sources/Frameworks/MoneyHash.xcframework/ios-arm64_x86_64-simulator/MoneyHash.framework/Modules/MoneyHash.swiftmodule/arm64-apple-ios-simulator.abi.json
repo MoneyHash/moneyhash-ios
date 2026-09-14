@@ -41541,69 +41541,69 @@
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
       "offset": 97,
-      "length": 8,
-      "value": "\"4.0.25\""
+      "length": 7,
+      "value": "\"4.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 136,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 174,
+      "offset": 173,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 213,
+      "offset": 212,
       "length": 6,
       "value": "\"lang\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 250,
       "length": 7,
       "value": "\"agent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 292,
+      "offset": 291,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 341,
+      "offset": 340,
       "length": 20,
       "value": "\"subscription-plan\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 409,
       "length": 14,
       "value": "\"bankaccount\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 489,
+      "offset": 488,
       "length": 13,
       "value": "1500000000"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 568,
       "length": 14,
       "value": "10000000000"
     },
