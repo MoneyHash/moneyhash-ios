@@ -648,6 +648,13 @@ public enum EmbedAction {
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
 }
+public enum MoneyHashLogging {
+  public static func debug(_ source: Swift.String, _ message: Swift.String)
+  public static func event(_ source: Swift.String, _ message: Swift.String)
+  public static func warn(_ source: Swift.String, _ message: Swift.String)
+  public static func error(_ source: Swift.String, _ message: Swift.String, _ error: (any Swift.Error)? = nil)
+  public static func log(level: Swift.String, source: Swift.String, message: Swift.String)
+}
 public enum LogLevel {
   case verbose
   case debug
@@ -655,6 +662,7 @@ public enum LogLevel {
   case warning
   case error
   case assert
+  case off
   public static func == (a: MoneyHash.LogLevel, b: MoneyHash.LogLevel) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
