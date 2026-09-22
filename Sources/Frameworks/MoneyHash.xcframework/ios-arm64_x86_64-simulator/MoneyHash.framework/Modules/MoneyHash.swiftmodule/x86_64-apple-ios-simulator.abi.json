@@ -4798,6 +4798,67 @@
           },
           {
             "kind": "Var",
+            "name": "depositAmount",
+            "printedName": "depositAmount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash12ApplePayDataV13depositAmountSdSgvp",
+            "mangledName": "$s9MoneyHash12ApplePayDataV13depositAmountSdSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash12ApplePayDataV13depositAmountSdSgvg",
+                "mangledName": "$s9MoneyHash12ApplePayDataV13depositAmountSdSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "amount",
             "printedName": "amount",
             "children": [
@@ -4820,13 +4881,12 @@
             "usr": "s:9MoneyHash12ApplePayDataV6amountSfSgvp",
             "mangledName": "$s9MoneyHash12ApplePayDataV6amountSfSgvp",
             "moduleName": "MoneyHash",
+            "deprecated": true,
             "declAttributes": [
-              "HasStorage",
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
-            "isLet": true,
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4852,7 +4912,6 @@
                 "usr": "s:9MoneyHash12ApplePayDataV6amountSfSgvg",
                 "mangledName": "$s9MoneyHash12ApplePayDataV6amountSfSgvg",
                 "moduleName": "MoneyHash",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -13768,6 +13827,322 @@
           {
             "kind": "Function",
             "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(applePayData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApplePayData",
+                "printedName": "MoneyHash.ApplePayData",
+                "usr": "s:9MoneyHash12ApplePayDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt05appleF4DataAA06NativefG0VAA0efI0V_tYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt05appleF4DataAA06NativefG0VAA0efI0V_tYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(applePayData:recurringPayment:automaticReload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApplePayData",
+                "printedName": "MoneyHash.ApplePayData",
+                "usr": "s:9MoneyHash12ApplePayDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.RecurringPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentRequest",
+                    "printedName": "MoneyHash.RecurringPaymentRequest",
+                    "usr": "s:9MoneyHash23RecurringPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.AutomaticReloadPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutomaticReloadPaymentRequest",
+                    "printedName": "MoneyHash.AutomaticReloadPaymentRequest",
+                    "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt05appleF4Data16recurringPayment15automaticReloadAA06NativefG0VAA0efI0V_AA09RecurringK7RequestVSgAA09AutomaticmkP0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt05appleF4Data16recurringPayment15automaticReloadAA06NativefG0VAA0efI0V_AA09RecurringK7RequestVSgAA09AutomaticmkP0VSgtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "Custom",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(depositAmount:merchantIdentifier:currencyCode:countryCode:supportedNetworks:merchantCapabilities:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12CapabilitiesAA06NativefG0VSd_S3SSaySSGSgANtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12CapabilitiesAA06NativefG0VSd_S3SSaySSGSgANtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateApplePayReceipt",
+            "printedName": "generateApplePayReceipt(depositAmount:merchantIdentifier:currencyCode:countryCode:supportedNetworks:merchantCapabilities:recurringPayment:automaticReload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativePayReceipt",
+                "printedName": "MoneyHash.NativePayReceipt",
+                "usr": "s:9MoneyHash16NativePayReceiptV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.RecurringPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecurringPaymentRequest",
+                    "printedName": "MoneyHash.RecurringPaymentRequest",
+                    "usr": "s:9MoneyHash23RecurringPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.AutomaticReloadPaymentRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutomaticReloadPaymentRequest",
+                    "printedName": "MoneyHash.AutomaticReloadPaymentRequest",
+                    "usr": "s:9MoneyHash29AutomaticReloadPaymentRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12Capabilities16recurringPayment15automaticReloadAA06NativefG0VSd_S3SSaySSGSgApA09RecurringS7RequestVSgAA09AutomaticusX0VSgtYaKF",
+            "mangledName": "$s9MoneyHash0aB3SDKP23generateApplePayReceipt13depositAmount18merchantIdentifier12currencyCode07countryM017supportedNetworks0J12Capabilities16recurringPayment15automaticReloadAA06NativefG0VSd_S3SSaySSGSgApA09RecurringS7RequestVSgAA09AutomaticusX0VSgtYaKF",
+            "moduleName": "MoneyHash",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
+            "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "protocolReq": true,
+            "intro_iOS": "16.0",
+            "declAttributes": [
+              "Custom",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generateApplePayReceipt",
             "printedName": "generateApplePayReceipt(depositAmount:applePayData:)",
             "children": [
               {
@@ -13795,9 +14170,12 @@
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
               "Custom",
+              "Available",
+              "DisfavoredOverload",
               "RawDocComment"
             ],
             "throwing": true,
@@ -13890,9 +14268,12 @@
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
               "Custom",
+              "Available",
+              "DisfavoredOverload",
               "RawDocComment"
             ],
             "throwing": true,
@@ -14013,10 +14394,13 @@
             "moduleName": "MoneyHash",
             "genericSig": "<τ_0_0 where τ_0_0 : MoneyHash.MoneyHashSDK>",
             "sugared_genericSig": "<Self where Self : MoneyHash.MoneyHashSDK>",
+            "deprecated": true,
             "protocolReq": true,
             "intro_iOS": "16.0",
             "declAttributes": [
               "Custom",
+              "Available",
+              "DisfavoredOverload",
               "Available",
               "RawDocComment"
             ],
@@ -40552,49 +40936,56 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2252,
+      "offset": 2045,
       "length": 14,
       "value": "\"country_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2086,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2335,
+      "offset": 2128,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2383,
+      "offset": 2176,
       "length": 19,
       "value": "\"supported_regions\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 2225,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
+      "kind": "StringLiteral",
+      "offset": 2267,
       "length": 20,
       "value": "\"supported_networks\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2501,
+      "offset": 2312,
       "length": 11,
       "value": "\"method_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/ApplePayData.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 2360,
       "length": 23,
       "value": "\"merchant_capabilities\""
     },
@@ -41567,14 +41958,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16509,
+      "offset": 22788,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Core\/DefaultMoneyHashSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 16536,
+      "offset": 22815,
       "length": 1,
       "value": "0"
     },
@@ -41842,7 +42233,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"4.1.1\""
+      "value": "\"4.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
