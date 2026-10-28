@@ -7743,6 +7743,43 @@
           },
           {
             "kind": "Var",
+            "name": "jaywan",
+            "printedName": "jaywan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoneyHash.Brand.Type) -> MoneyHash.Brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Brand",
+                    "printedName": "MoneyHash.Brand",
+                    "usr": "s:9MoneyHash5BrandO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MoneyHash.Brand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Brand",
+                        "printedName": "MoneyHash.Brand",
+                        "usr": "s:9MoneyHash5BrandO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9MoneyHash5BrandO6jaywanyA2CmF",
+            "mangledName": "$s9MoneyHash5BrandO6jaywanyA2CmF",
+            "moduleName": "MoneyHash"
+          },
+          {
+            "kind": "Var",
             "name": "unknown",
             "printedName": "unknown",
             "children": [
@@ -21936,6 +21973,67 @@
                 "declKind": "Accessor",
                 "usr": "s:9MoneyHash13IntentMethodsV17savedBankAccountsSayAA05SavedF7AccountVGSgvg",
                 "mangledName": "$s9MoneyHash13IntentMethodsV17savedBankAccountsSayAA05SavedF7AccountVGSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customerLastUsedMethod",
+            "printedName": "customerLastUsedMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.CustomerLastUsedMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CustomerLastUsedMethod",
+                    "printedName": "MoneyHash.CustomerLastUsedMethod",
+                    "usr": "s:9MoneyHash22CustomerLastUsedMethodV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash13IntentMethodsV22customerLastUsedMethodAA08CustomerfgH0VSgvp",
+            "mangledName": "$s9MoneyHash13IntentMethodsV22customerLastUsedMethodAA08CustomerfgH0VSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.CustomerLastUsedMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomerLastUsedMethod",
+                        "printedName": "MoneyHash.CustomerLastUsedMethod",
+                        "usr": "s:9MoneyHash22CustomerLastUsedMethodV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash13IntentMethodsV22customerLastUsedMethodAA08CustomerfgH0VSgvg",
+                "mangledName": "$s9MoneyHash13IntentMethodsV22customerLastUsedMethodAA08CustomerfgH0VSgvg",
                 "moduleName": "MoneyHash",
                 "implicit": true,
                 "accessorKind": "get"
@@ -39867,6 +39965,285 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CustomerLastUsedMethod",
+        "printedName": "CustomerLastUsedMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash22CustomerLastUsedMethodV2idSSSgvp",
+            "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV2idSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash22CustomerLastUsedMethodV2idSSSgvg",
+                "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV2idSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash22CustomerLastUsedMethodV6methodSSSgvp",
+            "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV6methodSSSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash22CustomerLastUsedMethodV6methodSSSgvg",
+                "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV6methodSSSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MoneyHash.LastUsedMethodType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LastUsedMethodType",
+                    "printedName": "MoneyHash.LastUsedMethodType",
+                    "usr": "s:9MoneyHash18LastUsedMethodTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MoneyHash22CustomerLastUsedMethodV4typeAA0deF4TypeOSgvp",
+            "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV4typeAA0deF4TypeOSgvp",
+            "moduleName": "MoneyHash",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MoneyHash.LastUsedMethodType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LastUsedMethodType",
+                        "printedName": "MoneyHash.LastUsedMethodType",
+                        "usr": "s:9MoneyHash18LastUsedMethodTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MoneyHash22CustomerLastUsedMethodV4typeAA0deF4TypeOSgvg",
+                "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV4typeAA0deF4TypeOSgvg",
+                "moduleName": "MoneyHash",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomerLastUsedMethod",
+                "printedName": "MoneyHash.CustomerLastUsedMethod",
+                "usr": "s:9MoneyHash22CustomerLastUsedMethodV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MoneyHash22CustomerLastUsedMethodV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9MoneyHash22CustomerLastUsedMethodV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MoneyHash",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9MoneyHash22CustomerLastUsedMethodV",
+        "mangledName": "$s9MoneyHash22CustomerLastUsedMethodV",
+        "moduleName": "MoneyHash",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "LastUsedMethodType",
         "printedName": "LastUsedMethodType",
         "children": [
@@ -41566,44 +41943,51 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2221,
+      "offset": 2415,
       "length": 19,
       "value": "\"customer_balances\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2271,
+      "offset": 2465,
       "length": 17,
       "value": "\"payment_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2513,
       "length": 17,
       "value": "\"express_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2363,
+      "offset": 2557,
       "length": 13,
       "value": "\"saved_cards\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2406,
+      "offset": 2600,
       "length": 16,
       "value": "\"payout_methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 2650,
       "length": 21,
       "value": "\"saved_bank_accounts\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/IntentMethods.swift",
+      "kind": "StringLiteral",
+      "offset": 2710,
+      "length": 27,
+      "value": "\"customer_last_used_method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Methods\/ExpressMethod.swift",
@@ -42233,7 +42617,7 @@
       "kind": "StringLiteral",
       "offset": 97,
       "length": 7,
-      "value": "\"4.2.0\""
+      "value": "\"4.2.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Constant\/MHConstants.swift",
@@ -42497,21 +42881,21 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/LastUsedMethod.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 1149,
       "length": 18,
       "value": "\"customer_balance\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/LastUsedMethod.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 1195,
       "length": 12,
       "value": "\"saved_card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-one\/mobile-one\/iOS\/MoneyHash\/Models\/LastUsedMethod.swift",
       "kind": "StringLiteral",
-      "offset": 663,
+      "offset": 1235,
       "length": 16,
       "value": "\"payment_method\""
     },

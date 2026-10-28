@@ -195,6 +195,7 @@ public enum Brand : Swift.String, Swift.Codable {
   case mada
   case troy
   case amex
+  case jaywan
   case unknown
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -521,6 +522,7 @@ public struct IntentMethods : Swift.Codable {
   public let savedCards: [MoneyHash.SavedCard]?
   public let payoutMethods: [MoneyHash.PayoutMethod]?
   public let savedBankAccounts: [MoneyHash.SavedBankAccount]?
+  public let customerLastUsedMethod: MoneyHash.CustomerLastUsedMethod?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -970,6 +972,13 @@ public enum NativePayData : Swift.Codable {
 public struct LastUsedMethod : Swift.Codable {
   public let type: MoneyHash.LastUsedMethodType?
   public let id: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerLastUsedMethod : Swift.Codable {
+  public let id: Swift.String?
+  public let method: Swift.String?
+  public let type: MoneyHash.LastUsedMethodType?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
